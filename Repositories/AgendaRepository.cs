@@ -45,14 +45,14 @@ namespace CTX.Bot.ConexaoLiq.Repositories
             return agendasResultado;
         }
 
-        public ICollection<Agenda> PesquisarRefeicao(string refeicao, DateTime data)
+        public ICollection<Agenda> PesquisarRefeicao(string refeicao, DateTime dataAtual)
         {
             var agendasResultado = new List<Agenda>();
-            var agendas = Listar().Where(c => c.Data.Date == data.Date).ToList();
+            var agendas = Listar().Where(c => c.Data.Date == dataAtual.Date).ToList();
 
             foreach (var agenda in agendas)
             {
-                var atividades = agenda.Atividades.Where(x => x.Descricao.ToSearch().Like(refeicao.ToSearch()) && x.Inicio.IncluirHoraData(data) > data).ToList();
+                var atividades = agenda.Atividades.Where(x => x.Descricao.ToSearch().Like(refeicao.ToSearch()) && x.Inicio.IncluirHoraData(dataAtual) > dataAtual).ToList();
 
                 if (refeicao == "fome")
                 {
@@ -63,7 +63,7 @@ namespace CTX.Bot.ConexaoLiq.Repositories
                       ||
                      x.Descricao.ToSearch().Like("jantar"))
                      &&
-                     x.Inicio.IncluirHoraData(data) > data
+                     x.Inicio.IncluirHoraData(dataAtual) > dataAtual
                      );
 
                     if (atividade != null)
@@ -87,6 +87,7 @@ namespace CTX.Bot.ConexaoLiq.Repositories
             return agendasResultado;
         }
 
+
         public ICollection<Atividade> PesquisarAtividades(DateTime data, string inicio, string fim)
         {
             var agenda = Obter(data);
@@ -104,8 +105,22 @@ namespace CTX.Bot.ConexaoLiq.Repositories
             var datFinal = fim.IncluirHoraData(agenda.Data);
 
             return agenda.Atividades.Where(c =>
-              datInicio >= c.Inicio.IncluirHoraData(agenda.Data) &&
-              datInicio <= c.Fim.IncluirHoraData(agenda.Data)
+               c.Inicio.IncluirHoraData(agenda.Data) <= datFinal &&
+               c.Fim.IncluirHoraData(agenda.Data) >= datInicio
+            ).ToList();
+
+        }
+
+        public ICollection<Atividade> PesquisarAtividades(DateTime data)
+        {
+            var agenda = Obter(data);
+
+            if (agenda == null)
+                return new List<Atividade>();
+
+
+            return agenda.Atividades.Where(c =>
+               c.Inicio.IncluirHoraData(agenda.Data) >= data
             ).ToList();
 
         }

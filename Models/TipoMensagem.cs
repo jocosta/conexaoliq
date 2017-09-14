@@ -30,7 +30,7 @@
         Help = 26,
         NaoTemosSiteNaEm = 27,
         RespostaUsuarioMalcriado = 28,
-        AtividadeNaoEncontradaNaAgenda = 29,
+        AlgumasAtividadesEncontradas = 29,
         EnviandoAgendaCompleta = 30,
         NaoEncontreiAtividadeDoResponsavel = 31,
         AchoQueOHorarioDeAlmoçoJaPassou = 32,

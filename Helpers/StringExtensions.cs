@@ -129,8 +129,6 @@ namespace CTX.Bot.ConexaoLiq.Helpers
         public static string FormatarHora(this string hora)
         {
 
-
-
             if (!string.IsNullOrEmpty(hora))
             {
                 if (Regex.IsMatch(hora, "[0-9a-zA-z]"))

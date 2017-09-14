@@ -88,14 +88,15 @@ namespace CTX.Bot.ConexaoLiq.Services
                 inicio = inicio.FormatarHora();
                 final = final.FormatarHora();
 
+                if (!string.IsNullOrEmpty(dia))
+                    dataAtual = dia.RetornarDataDoDia(dataAtual);
+
                 var atividades = _agendaRepository.PesquisarAtividades(dataAtual, inicio, final);
 
                 if (!atividades.Any())
                 {
                     await SendTyping();
-                    await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.AtividadeNaoEncontradaNaAgenda));
-
-                    var agendas = _agendaRepository.Listar().Where(c => c.Data > dataAtual).ToList();
+                    var agendas = _agendaRepository.Listar().Where(c => c.Data.Date >= dataAtual.Date).ToList();
 
                     await SendTyping();
                     await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.EnviandoAgendaCompleta));
@@ -184,10 +185,13 @@ namespace CTX.Bot.ConexaoLiq.Services
 
             if (periodo == "depois")
             {
-                var atividade = agenda.Atividades.FirstOrDefault(c => c.Inicio.IncluirHoraData(dataAtual) <= dataAtual && c.Fim.IncluirHoraData(dataAtual) >= dataAtual);
+
+                var atividade = _agendaRepository.PesquisarAtividades(dataAtual, dataAtual.ToShortDateString(), dataAtual.ToShortDateString()).FirstOrDefault();
+
                 if (atividade != null)
                 {
                     var proximaAtividade = agenda.Atividades.Where(c => c.Inicio == atividade.Fim);
+
                     if (proximaAtividade.Any())
                     {
                         atividades.Add(proximaAtividade.FirstOrDefault());
@@ -196,18 +200,18 @@ namespace CTX.Bot.ConexaoLiq.Services
                     }
                 }
 
-                await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.AtividadeNaoEncontradaNaAgenda));
-
             }
-            else
-            {
+
+            await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.AlgumasAtividadesEncontradas));
+            var inicio = periodo.RetornarHoraInicioPeriodoDia(dataAtual);
+            var fim = periodo.RetornarHoraFinalPeriodoDia(dataAtual);
 
 
-                var inicio = periodo.RetornarHoraInicioPeriodoDia(dataAtual);
-                var fim = periodo.RetornarHoraFinalPeriodoDia(dataAtual);
+            if (inicio != null)
+                atividades = _agendaRepository.PesquisarAtividades(dataAtual, inicio.Value.ToShortTimeString(), fim.Value.ToShortTimeString()).ToList();
 
-                atividades = agenda.Atividades.Where(c => c.Fim.IncluirHoraData(dataAtual) >= inicio && c.Fim.IncluirHoraData(dataAtual) <= fim).ToList();
-            }
+            if (!atividades.Any())
+                atividades = _agendaRepository.PesquisarAtividades(dataAtual).ToList();
 
             await MensagemDadosAgendaAsync(atividades);
 
