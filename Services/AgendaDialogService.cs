@@ -89,7 +89,16 @@ namespace CTX.Bot.ConexaoLiq.Services
                 final = final.FormatarHora();
 
                 if (!string.IsNullOrEmpty(dia))
+                {
                     dataAtual = dia.RetornarDataDoDia(dataAtual);
+
+                    if (string.IsNullOrEmpty(inicio))
+                        inicio = "00:00";
+
+                    if (string.IsNullOrEmpty(final))
+                        final = "23:59";
+
+                }
 
                 var atividades = _agendaRepository.PesquisarAtividades(dataAtual, inicio, final);
 
