@@ -1,12 +1,8 @@
 ﻿using CTX.Bot.ConexaoLiq.Infra.Configurations;
 using CTX.Bot.ConexaoLiq.Models;
-using Microsoft.Bot.Connector;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Web;
 
 namespace CTX.Bot.ConexaoLiq.Infra.Context
 {
@@ -19,7 +15,6 @@ namespace CTX.Bot.ConexaoLiq.Infra.Context
             this.Configuration.ProxyCreationEnabled = false;
 
         }
-
 
         public DbSet<UserActivity> Activities { get; set; }
 
