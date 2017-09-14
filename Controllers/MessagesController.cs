@@ -19,6 +19,8 @@
     using LuisBot;
     using Infra.Context;
     using Models;
+    using System.Net.Http.Headers;
+    using System.IO;
 
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -126,6 +128,31 @@
                         message.Text = await AudioConvert.SpeechToText(attachment.ContentUrl);
                         textToSpeech = true;
                         message.Attachments.Clear();
+                    }
+                    else if (attachment.ContentType == "image/jpeg" || attachment.ContentType == "image/png")
+                    {
+                        // HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
+                        using (HttpClient httpClient = new HttpClient())
+                        {
+                            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+                            if ((message.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || message.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
+                                && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
+                            {
+                                var token = await new MicrosoftAppCredentials().GetTokenAsync();
+                                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                            }
+
+                            var path = WebConfigurationManager.AppSettings["PhotosPath"];
+
+                            File.WriteAllBytes($"{path}{message.ChannelId}_{message.From.Id}_{attachment.Name}",
+                                   new WebClient().DownloadData(attachment.ContentUrl));
+
+                            //    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+
+                            //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+                        }
+
+
                     }
                 }
                 catch (Exception ex)
