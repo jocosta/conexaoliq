@@ -54,20 +54,20 @@
 
                 try
                 {
-                //    using (var context = new BotContext())
-                //    {
-                //        var userActivity = new UserActivity();
-                //        userActivity.Channel = activity.ChannelId;
-                //        userActivity.UserId = activity.From.Id;
-                //        userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
-                //        userActivity.Data = DateTime.Now;
-                //        userActivity.Id = Guid.NewGuid();
+                    using (var context = new BotContext())
+                    {
+                        var userActivity = new UserActivity();
+                        userActivity.Channel = activity.ChannelId;
+                        userActivity.UserId = activity.From.Id;
+                        userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
+                        userActivity.Data = DateTime.Now;
+                        userActivity.Id = Guid.NewGuid();
 
 
-                //        context.Activities.Add(userActivity);
+                        context.Activities.Add(userActivity);
 
-                //        context.SaveChanges();
-                //    }
+                        context.SaveChanges();
+                    }
                 }
                 catch (Exception ex)
                 {
