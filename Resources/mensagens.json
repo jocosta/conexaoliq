@@ -1,0 +1,242 @@
+[
+  {
+    "TipoMensagem": 7,
+    "Texto": "Ops! @confuso Não encontrei nenhuma informação para o cargo."
+  },
+  {
+    "TipoMensagem": 7,
+    "Texto": "Eu não consegui encontrar o cargo que você solicitou. @pensativo"
+  },
+  {
+    "TipoMensagem": 8,
+    "Texto": "Não entendi o texto que você digitou, mas vou lhe enviar nosso time executivo. @piscada"
+  },
+  {
+    "TipoMensagem": 8,
+    "Texto": "Eu não consegui encontrar o cargo que você solicitou. Da uma olhadinha no nosso time executivo. @piscada"
+  },
+  {
+    "TipoMensagem": 2,
+    "Texto": "Aqui está o presidente que você deseja conhecer. @piscada"
+  },
+  {
+    "TipoMensagem": 2,
+    "Texto": "Legal! Você gosta de política! Esse é o cara. @piscadelacomlingua"
+  },
+  {
+    "TipoMensagem": 5,
+    "Texto": "Falando em presidente... Conheça o presidente da nossa empresa."
+  },
+  {
+    "TipoMensagem": 5,
+    "Texto": "Mas quero que você conheça o presidente da nossa empresa."
+  },
+  {
+    "TipoMensagem": 3,
+    "Texto": "Que pena. Eu não consegui matar sua curiosidade sobre quem manda por lá."
+  },
+  {
+    "TipoMensagem": 3,
+    "Texto": "Ops! Não encontrei informações sobre o presidente do país em questão."
+  },
+  {
+    "TipoMensagem": 4,
+    "Texto": "Ops! Eu não faço idéia de quem ocupa o cargo por lá! rsrsrsrs"
+  },
+  {
+    "TipoMensagem": 4,
+    "Texto": "No momento eu não sei. Quem sabe da próxima. @piscadelacomlingua"
+  },
+  {
+    "TipoMensagem": 13,
+    "Texto": "Vou selecionar alguns dos clientes para lhe mostrar. @sorriso"
+  },
+  {
+    "TipoMensagem": 13,
+    "Texto": "Segue alguns de nossos clientes. @sorriso"
+  },
+  {
+    "TipoMensagem": 13,
+    "Texto": "É com muito orgulho que lhe apresento alguns de nossos clientes. @sorriso"
+  },
+  {
+    "TipoMensagem": 13,
+    "Texto": "Esses são alguns de nossos clientes. Eu adoraria que você fosse um cliente também. @sorriso"
+  },
+  {
+    "TipoMensagem": 14,
+    "Texto": "Nós possuimos um faturamento anual de R$ 2 bilhões."
+  },
+  {
+    "TipoMensagem": 14,
+    "Texto": "Nosso faturamento anual é de R$ 2 bilhões. @dinheiro"
+  },
+  {
+    "TipoMensagem": 14,
+    "Texto": "Tá legal! Vou matar sua curiosidade. @sorriso São R$ 2 bilhões de faturamento anual. "
+  },
+  {
+    "TipoMensagem": 9,
+    "Texto": "Hoje a empresa conta com mais de 50 mil colaboradores. @piscada "
+  },
+  {
+    "TipoMensagem": 9,
+    "Texto": "São mais de 50 mil colaboradores. @piscada "
+  },
+  {
+    "TipoMensagem": 9,
+    "Texto": "Nosso time é composto por mais de 50 mil colaboradores. @piscada "
+  },
+  {
+    "TipoMensagem": 15,
+    "Texto": "Veja alguns dos prêmios que a empresa conquistou."
+  },
+  {
+    "TipoMensagem": 15,
+    "Texto": "Recebemos muitos prêmios! Vou te enviar alguns deles."
+  },
+  {
+    "TipoMensagem": 15,
+    "Texto": "Opa! Prêmios? É pra já! Da uma olhadinha. @piscada"
+  },
+  {
+    "TipoMensagem": 16,
+    "Texto": "Nós temos sites em {0}, veja a localização"
+  },
+  {
+    "TipoMensagem": 16,
+    "Texto": "Em {0} nós temos os sites nas seguintes localizações"
+  },
+  {
+    "TipoMensagem": 17,
+    "Texto": "Ops! @confuso Não entendi o site sobre qual você quer informações..."
+  },
+  {
+    "TipoMensagem": 17,
+    "Texto": "Huumm... @confuso Não conheço o site que você digitou. Por favor, tente novamente."
+  },
+  {
+    "TipoMensagem": 17,
+    "Texto": "Esse site eu não conheço. @confuso Tente digitar outra vez."
+  },
+  {
+    "TipoMensagem": 18,
+    "Texto": "Esta é a localização do site {0}:"
+  },
+  {
+    "TipoMensagem": 18,
+    "Texto": "O site {0} fica exatamente nesta localização:"
+  },
+  {
+    "TipoMensagem": 18,
+    "Texto": "Eu fiz uma pesquisa e encontrei o site {0} na seguinte localização:"
+  },
+  {
+    "TipoMensagem": 19,
+    "Texto": "Nós temos sites na {0}, veja a localização:"
+  },
+  {
+    "TipoMensagem": 20,
+    "Texto": "Ops! @triste Não entendi sobre qual site você deseja informações. Vou te mandar os dados que eu tenho, espera só um segundinho. @piscada"
+  },
+  {
+    "TipoMensagem": 21,
+    "Texto": "Com mais de 15 anos de experiência, a LIQ está presente em 10 estados, sempre tornando possível e fortalecendo relacionamentos em todo Brasil."
+  },
+  {
+    "TipoMensagem": 22,
+    "Texto": "Eu não tenho informações sobre o dado institucional que você está procurando."
+  },
+  {
+    "TipoMensagem": 23,
+    "Texto": "Eu não encontrei informações sobre o funcionário que você informou."
+  },
+  {
+    "TipoMensagem": 23,
+    "Texto": "Ops! Acho que esse colaborador não trabalha com a gente, pois não consegui encontrar informações dele."
+  },
+  {
+    "TipoMensagem": 24,
+    "Texto": "Olá! Pergunte algo sobre a empresa para começarmos."
+  },
+  {
+    "TipoMensagem": 25,
+    "Texto": "Eu sou software de automação controlado por inteligêcia artificial mais conhecido como Bot. @sorriso"
+  },
+  {
+    "TipoMensagem": 26,
+    "Texto": "É fácil! @piscada Me faça perguntas institucionais relacionadas aos assuntos: |\n>* Localização de sites de atendimento \n>* Funcionário e cargos\n>* Nossos clientes\n>* Faturamento da empresa\n>* Prêmios conquistados\n>* Motivação, Definição e Propósito da empresa.|Vamos nessa? Tente me fazer uma pergunta."
+  },
+  {
+    "TipoMensagem": 26,
+    "Texto": "Ta legal, vou te ajudar! @piscada É mais ou menos assim. Vou tentar interpretar perguntas relacionadas aos assuntos:| \n>* Localização de sites de atendimento \n>* Funcionário e cargos \n>* Nossos clientes \n>* Faturamento da empresa \n>* Prêmios conquistados \n>* Motivação, Definição e Propósito da empresa.|Depois de interpretar, vou lhe enviar a resposta mais adequada. @piscada Vamos nessa? Tente me fazer uma pergunta."
+  },
+  {
+    "TipoMensagem": 27,
+    "Texto": "Não temos site em {0}. @triste"
+  },
+  {
+    "TipoMensagem": 27,
+    "Texto": "Ops! Infelizmente não temos site em {0}. @triste"
+  },
+  {
+    "TipoMensagem": 28,
+    "Texto": "Ops! Ainda não conheço este tipo de informação. @triste"
+  },
+  {
+    "TipoMensagem": 28,
+    "Texto": "Infelizmente você digitou algo que eu ainda não aprendi! @triste"
+  },
+  {
+    "TipoMensagem": 28,
+    "Texto": "Não entendi muito bem o que você disse. @triste"
+  },
+  {
+    "TipoMensagem": 29,
+    "Texto": "Desculpe, mas não encontrei atividade para o horário ou data informada. @triste"
+  },
+  {
+    "TipoMensagem": 29,
+    "Texto": "Ops! Acho que não tem atividade para este horário."
+  },
+  {
+    "TipoMensagem": 29,
+    "Texto": "Dei uma olhadinha na agenda e não encontrei a informação que você deseja."
+  },
+  {
+    "TipoMensagem": 30,
+    "Texto": "Vou lhe enviar a agenda completa."
+  },
+  {
+    "TipoMensagem": 30,
+    "Texto": "Para facilitar vou pegar a genda completa para te enviar."
+  },
+  {
+    "TipoMensagem": 30,
+    "Texto": "Acho que consigo te ajudar se eu te mandar a agenda completa. Espera um pouquinho..."
+  },
+  {
+    "TipoMensagem": 30,
+    "Texto": "Da uma olhadinha na agenda de atividades completa. @piscada"
+  },
+  {
+    "TipoMensagem": 31,
+    "Texto": "Huuum... Não consegui a informação solicitada na agenda. @triste"
+  },
+  {
+    "TipoMensagem": 31,
+    "Texto": "O nome {0} Está correto? Pois não consegui encontrar informações. @triste"
+  },
+  {
+    "TipoMensagem": 32,
+    "Texto": "Ops! O horário do almoço já passou. @triste"
+  },
+  {
+    "TipoMensagem": 32,
+    "Texto": "Eu acho que o horário do almoço ja passou. @triste"
+  },
+  {
+    "TipoMensagem": 33,
+    "Texto": "Dei uma olhadinha na agenda e não encontrei nenhuma refeição agendada. @triste"
+  }
+]

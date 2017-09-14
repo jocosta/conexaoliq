@@ -1,0 +1,62 @@
+[
+  {
+    "texto": "Sim! @piscada Posso te ajudar?",
+    "tags": [ "online", "tá ai", "está ai", "" ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Muito bom dia! Bem-vindo a LIQ @sorriso No que posso te ajudar?",
+    "tags": [ "bom dia", "bom dia!", "bom dia." ],
+    "imagem": "images/gifs/braddance.gif"
+  },
+  {
+    "texto": "Boa noite! @sorriso@boanoite No que posso te ajudar?",
+    "tags": [ "boa noite", "boa noite!" ],
+    "imagem": "images/gifs/goodevening.gif"
+  },
+  {
+    "texto": "Boa tarde! @sorriso No que posso te ajudar?",
+    "tags": [ "boa tarde", "boa tarde!", "boa tarde." ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Oi! Bem-vindo a LIQ @sorriso Me ensinaram algumas informações da nossa empresa, mas também  do nosso  encontro de líderes. Não fique bravo se não responder de primeira, estou em treinamento",
+    "tags": [ "oi", "eae", "eai", "como vai", "olá", "oie", "hello", "hi" ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Oi! Bem-vindo a LIQ @sorriso No que posso te ajudar?",
+    "tags": [ "oi", "eae", "eai", "como vai", "olá", "oie", "hello", "hi" ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Estou ótimo! @sorriso No que posso te ajudar?",
+    "tags": [ "tudo bem", "como vai", "como se tá" ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Ops! Boa noite às {0} @duvida Muito cedo não acha? @risada@risada@risada@risada@risada",
+    "tags": [ "BoaNoiteManha", "BoaNoiteTarde" ],
+    "imagem": "images/bot.gif"
+  },
+  {
+    "texto": "Bom dia! Ainda está cedo para um boa tarde @risada@risada@risada@risada@risada",
+    "tags": [ "BoaTardeManha" ],
+    "imagem": "images/gifs/apwu.gif"
+  },
+  {
+    "texto": "Boa tarde? @boanoite Meu relógio deve estar atrasado {0} @risada@risada@risada@risada@risada",
+    "tags": [ "BoaTardeNoite" ],
+    "imagem": "images/gifs/whowut.gif"
+  },
+  {
+    "texto": "Bom dia você tem certeza? @boanoite Meu relógio deve estar atrasado pois são {0} @risada@risada@risada@risada@risada",
+    "tags": [ "BomDiaNoite" ],
+    "imagem": "images/gifs/w8wut.gif"
+  },
+  {
+    "texto": "Bom dia? Se meu relógio estiver correto {0} prefiro te desejar uma boa tarde! @risada@risada@risada@risada@risada",
+    "tags": [ "BomDiaTarde" ],
+    "imagem": "images/gifs/godhi.gif"
+  }
+]

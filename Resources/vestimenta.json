@@ -1,0 +1,22 @@
+﻿[
+  {
+    "chave": "1",
+    "texto": "Não sabe qual roupa vestir?!",
+    "imagem": "images/gifs/vestuarioduvida.gif"
+  },
+  {
+    "chave": "2",
+    "texto": "Preocupado com o que as pessoas vão pensar?!",
+    "imagem": "images/gifs/julgandovestuario.gif"
+  },
+  {
+    "chave": "3",
+    "texto": "O traje sugerido para os dois dias é esporte. Opte por calçados e roupas confortáveis. No credenciamento do evento serão entregues duas camisetas...",
+    "imagem": "images/gifs/vestuariofashion.gif"
+  },
+  {
+    "chave": "4",
+    "texto": "Para o jantar de confraternização, sugerimos traje esporte fino.",
+    "imagem": "images/gifs/festavestuario.gif"
+  }
+]

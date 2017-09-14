@@ -1,0 +1,176 @@
+[
+  {
+    "NomePessoa": "Nelson Armbrust",
+    "DescricaoCargo": "CEO Corporativo",
+    "Tags": [ "CEO", "Presidente" ],
+    "Imagem": { "Caminho": "images/nelson_armbrust.jpg" }
+  },
+  {
+    "NomePessoa": "Fátima Oliveira Silva",
+    "DescricaoCargo": "Diretora Comercial e Produtos",
+    "Tags": [ "Diretora", "Diretor", "Diretores", "Diretoras", "Comercial", "Executivo", "Executiva", "Produtos", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/fatima_oliveira.jpg" }
+  },
+  {
+    "NomePessoa": "Andrei Passing",
+    "DescricaoCargo": "Diretor de Recursos Humanos",
+    "Tags": [ "Diretor", "Diretores", "Recursos", "Humanos", "Executivo", "Rh", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/andrei_passing.jpg" }
+  },
+  {
+    "NomePessoa": "Ana Coelho",
+    "DescricaoCargo": "Diretora Executiva OI",
+    "Tags": [ "Diretora", "Diretor", "Diretores", "Diretoras", "Executivo", "Executiva", "Oi", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/ana_coelho.jpg" }
+  },
+  {
+    "NomePessoa": "Marcelo Chianello",
+    "DescricaoCargo": "Diretor Executivo de Negócios e Marketing",
+    "Tags": [ "Diretora", "Diretor", "Diretores", "Executivo", "Negócios", "Marketing", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/marcelo_chianello.jpg" }
+  },
+  {
+    "NomePessoa": "Orlando Bertholdo",
+    "DescricaoCargo": "Diretor de Sistemas",
+    "Tags": [ "Diretor", "Diretores", "Desenvolvimento", "Executivo", "Sistemas", "TI", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/orlando.png" }
+  },
+  {
+    "NomePessoa": "André Prevedel",
+    "DescricaoCargo": "Diretor de Infraestrutura",
+    "Tags": [ "Diretor", "Diretores", "Infraestrutura", "Executivo", "TI", "VP", "VPS" ],
+    "Imagem": { "Caminho": "images/prevedel.png" }
+  },
+  {
+    "NomePessoa": "Cristiane Barretto",
+    "DescricaoCargo": "CFO - Chief Financial Officer",
+    "Tags": [ "CFO", "Chief", "Financial", "Officer" ],
+    "Imagem": { "Caminho": "images/cristiane_barretto.jpg" }
+  },
+  {
+    "NomePessoa": "João Mendes",
+    "DescricaoCargo": "CIO - Chief Information Officer",
+    "Tags": [ "CIO", "Chief", "Information", "Officer" ],
+    "Imagem": { "Caminho": "images/joao_mendes.png" }
+  },
+  {
+    "NomePessoa": "Cristiane Cé",
+    "DescricaoCargo": "CLO - Chief Legal Officer & Compliance",
+    "Tags": [ "CLO", "Chief", "Legal", "Officer", "Compliance" ],
+    "Imagem": { "Caminho": "images/cristiane_ce.jpg" }
+  },
+  {
+    "NomePessoa": "Dante Minucci",
+    "DescricaoCargo": "Gerente de Inovação",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Inovação" ],
+    "Imagem": { "Caminho": "images/dante.png" }
+  },
+  {
+    "NomePessoa": "Marco Hermo",
+    "DescricaoCargo": "Gerente de Marketing",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Marketing" ],
+    "Imagem": { "Caminho": "images/marco.jpg" }
+  },
+  {
+    "NomePessoa": "Antonio Alberto Agostineli",
+    "DescricaoCargo": "Gerente de Projetos Clientes/Corporativo",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Projeto", "Projetos" ],
+    "Imagem": { "Caminho": "images/agostineli.png" }
+  },
+  {
+    "NomePessoa": "Alexandre Morais",
+    "DescricaoCargo": "Gerente de Aplic. Negócios",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Aplicações", "Negócios", "Aplicação", "Negócio" ],
+    "Imagem": { "Caminho": "images/alexandremorais.png" }
+  },
+  {
+    "NomePessoa": "José Carlos",
+    "DescricaoCargo": "Gerente de URA & App. Móvel",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "URA", "Móvel", "Mobile" ],
+    "Imagem": { "Caminho": "images/josecarlos.png" }
+  },
+  {
+    "NomePessoa": "Roberto Toscani",
+    "DescricaoCargo": "Gerente de Segurança do Trabalho",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Segurança", "Trabalho" ],
+    "Imagem": { "Caminho": "images/toscani.png" }
+  },
+  {
+    "NomePessoa": "Maria Fernanda",
+    "DescricaoCargo": "Gerente de Governança de TI",
+    "Tags": [ "Gerente", "Gestor", "Gestora", "Gerentes", "Governança" ],
+    "Imagem": { "Caminho": "images/mariafernanda.png" }
+  },
+  {
+    "NomePessoa": "Klaus",
+    "DescricaoCargo": "Ger. Arquitetura e Apoio a Projetos",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Arquitetura", "Projetos" ],
+    "Imagem": { "Caminho": "images/klaus.png" }
+  },
+  {
+    "NomePessoa": "Daniel Donaire",
+    "DescricaoCargo": "Ger. CSC",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "CSC" ],
+    "Imagem": { "Caminho": "images/DanielDonaire.png" }
+  },
+  {
+    "NomePessoa": "Felipe Villa",
+    "DescricaoCargo": "Ger. Eng. e Redes",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Redes", "Engenharia" ],
+    "Imagem": { "Caminho": "images/FelipeVilla.png" }
+  },
+  {
+    "NomePessoa": "Ioshio Nagasaki",
+    "DescricaoCargo": "Ger. Sr.  Engenharia, Real Estate e Segurança ",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Redes", "Engenharia", "Segurança" ],
+    "Imagem": { "Caminho": "images/ioshionagasaki.png" }
+  },
+  {
+    "NomePessoa": "José",
+    "DescricaoCargo": "Segurança Patrimonial",
+    "Tags": [ "Segurança", "Patrimonial" ],
+    "Imagem": { "Caminho": "images/josePatriMarciomonial.png" }
+  },
+  {
+    "NomePessoa": "Celio",
+    "DescricaoCargo": "Ger. suporte N3 espec.",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Suporte", "N3", "Especialista" ],
+    "Imagem": { "Caminho": "images/celio.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. SR Sites",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "Senior", "Sites" ],
+    "Imagem": { "Caminho": "images/srdesites.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. Sites SP e PR",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "SP", "Sites", "PR" ],
+    "Imagem": { "Caminho": "images/sitesSPPR.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. Sites RJ e MG",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "RJ", "Sites", "MG" ],
+    "Imagem": { "Caminho": "images/siteRJMGrs.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. Sites BA e AC",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "BA", "Sites", "AC" ],
+    "Imagem": { "Caminho": "images/sitesBAAC.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. Sites PE , JP e CE",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "PE", "Sites", "JP", "CE" ],
+    "Imagem": { "Caminho": "images/sitesPEJPCE.png" }
+  },
+  {
+    "NomePessoa": "",
+    "DescricaoCargo": "Ger. Sites PE , JP e CE",
+    "Tags": [ "Gerente", "Gestor", "Gerentes", "PE", "Sites", "JP", "CE" ],
+    "Imagem": { "Caminho": "images/sitesPEJPCE2.png" }
+  }
+]

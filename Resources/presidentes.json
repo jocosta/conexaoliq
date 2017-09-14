@@ -1,0 +1,26 @@
+﻿[
+  {
+    "nome": "Donald Trump",
+    "descricao": "Estados Unidos/Presidente",
+    "tags": "EUA, Estados Unidos",
+    "imagem": {
+      "caminho": "http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"
+    }
+  },
+  {
+    "nome": "Michel Temer",
+    "descricao": "No cargo Michel Temer desde 31 de agosto de 2016",
+    "Tags": "BR, Brasil",
+    "imagem": {
+      "caminho": "https://conteudo.imguol.com.br/blogs/52/files/2016/12/michel-temer-Sergio-LimaPoder360.jpg"
+    }
+  },
+  {
+    "nome": "Mauricio Macri",
+    "descricao": "Argentina/Presidente",
+    "tags": "Argentina, Maradona",
+    "imagem": {
+      "caminho": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mauricio_Macri_2016.jpg"
+    }
+  }
+]

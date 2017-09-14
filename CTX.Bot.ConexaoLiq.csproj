@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTX.Bot.ConexaoLiq</RootNamespace>
+    <AssemblyName>CTX.Bot.ConexaoLiq</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.2.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>packages\Autofac.4.2.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Chronic, Version=0.3.2.0, Culture=neutral, PublicKeyToken=3bd1f1ef638b0d3c, processorArchitecture=MSIL">
+      <HintPath>packages\Chronic.Signed.0.3.2\lib\net40\Chronic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.5.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.5.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder, Version=3.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bot.Builder.3.8.1.0\lib\net46\Microsoft.Bot.Builder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder.Autofac, Version=3.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bot.Builder.3.8.1.0\lib\net46\Microsoft.Bot.Builder.Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder.Location, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bot.Builder.Location.2.1.0\lib\net46\Microsoft.Bot.Builder.Location.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Connector, Version=3.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bot.Builder.3.8.1.0\lib\net46\Microsoft.Bot.Connector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Protocol.Extensions, Version=1.0.40306.1554, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Protocol.Extensions.1.0.4.403061554\lib\net45\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Rest.ClientRuntime.2.3.4\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.40306.1554, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.IdentityModel.Tokens.Jwt.4.0.4.403061554\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="images\agostinelii.png" />
+    <Content Include="images\ajinomoto.jpg" />
+    <Content Include="images\albertEinstein.jpg" />
+    <Content Include="images\alexandremorais.png" />
+    <Content Include="images\ana_coelho.jpg" />
+    <Content Include="images\andrei_passing.jpg" />
+    <Content Include="images\atlantico.jpg" />
+    <Content Include="images\baxter.jpg" />
+    <Content Include="images\bot.gif" />
+    <Content Include="images\bot_crying.gif" />
+    <Content Include="images\bradesco.jpg" />
+    <Content Include="images\bvFinanceira1.jpg" />
+    <Content Include="images\canon.jpg" />
+    <Content Include="images\castrol.jpg" />
+    <Content Include="images\celio.png" />
+    <Content Include="images\citibank.jpg" />
+    <Content Include="images\claro.jpg" />
+    <Content Include="images\content-premios11.jpg" />
+    <Content Include="images\content-premios2.jpg" />
+    <Content Include="images\content-premios3.jpg" />
+    <Content Include="images\content-premios4.jpg" />
+    <Content Include="images\content-premios5.jpg" />
+    <Content Include="images\content-premios6.jpg" />
+    <Content Include="images\content-premios7.jpg" />
+    <Content Include="images\coteminas.jpg" />
+    <Content Include="images\cristiane_barretto.jpg" />
+    <Content Include="images\cristiane_ce.jpg" />
+    <Content Include="images\cristina_barretto.jpg" />
+    <Content Include="images\DanielDonaire.png" />
+    <Content Include="images\dante.png" />
+    <Content Include="images\elektro.jpg" />
+    <Content Include="images\fatima_oliveira.jpg" />
+    <Content Include="images\FelipeVilla.png" />
+    <Content Include="images\femsa.jpg" />
+    <Content Include="images\fenosa.jpg" />
+    <Content Include="images\ferrerorocher.jpg" />
+    <Content Include="images\gifs\apwu.gif" />
+    <Content Include="images\gifs\braddance.gif" />
+    <Content Include="images\gifs\chegandofashion.gif" />
+    <Content Include="images\gifs\chloe.gif" />
+    <Content Include="images\gifs\choofed.gif" />
+    <Content Include="images\gifs\festavestuario.gif" />
+    <Content Include="images\gifs\godhi.gif" />
+    <Content Include="images\gifs\goodevening.gif" />
+    <Content Include="images\gifs\julgandovestuario.gif" />
+    <Content Include="images\gifs\rdlol.gif" />
+    <Content Include="images\gifs\stumped.gif" />
+    <Content Include="images\gifs\tpo.gif" />
+    <Content Include="images\gifs\traje.gif" />
+    <Content Include="images\gifs\vestuarioduvida.gif" />
+    <Content Include="images\gifs\vestuariofashion.gif" />
+    <Content Include="images\gifs\w8wut.gif" />
+    <Content Include="images\gifs\whowut.gif" />
+    <Content Include="images\globo.jpg" />
+    <Content Include="images\goldencross.jpg" />
+    <Content Include="images\highlights-phrase.png" />
+    <Content Include="images\highlights-regex.png" />
+    <Content Include="images\hp1.jpg" />
+    <Content Include="images\image-pending.png" />
+    <Content Include="images\intermedica.jpg" />
+    <Content Include="images\ioshionagasaki.png" />
+    <Content Include="images\itau.jpg" />
+    <Content Include="images\jefferson_mesquita.jpg" />
+    <Content Include="images\joao_mendes.jpg" />
+    <Content Include="images\joao_mendes.png" />
+    <Content Include="images\josecarlos.png" />
+    <Content Include="images\josePatriMarciomonial.png" />
+    <Content Include="images\jose_adriano.jpg" />
+    <Content Include="images\jose_romualdo.jpg" />
+    <Content Include="images\khaled.jpg" />
+    <Content Include="images\klaus.png" />
+    <Content Include="images\latamAirlines.jpg" />
+    <Content Include="images\marcelo_chianello.jpg" />
+    <Content Include="images\marco.jpg" />
+    <Content Include="images\mariafernanda.png" />
+    <Content Include="images\metlife.jpg" />
+    <Content Include="images\nelson_armbrust.jpg" />
+    <Content Include="images\nespresso.jpg" />
+    <Content Include="images\net.jpg" />
+    <Content Include="images\oi %281%29.jpg" />
+    <Content Include="images\oi %282%29.jpg" />
+    <Content Include="images\oi.jpg" />
+    <Content Include="images\olympicus.jpg" />
+    <Content Include="images\orlando.jpg" />
+    <Content Include="images\orlando.png" />
+    <Content Include="images\outcome.png" />
+    <Content Include="images\philips.jpg" />
+    <Content Include="images\portoSeguro.jpg" />
+    <Content Include="images\prereqs-apikey.png" />
+    <Content Include="images\prereqs-appid.png" />
+    <Content Include="images\prereqs-import.png" />
+    <Content Include="images\prevedel.jpg" />
+    <Content Include="images\prevedel.png" />
+    <Content Include="images\rede.jpg" />
+    <Content Include="images\royal-canin.jpg" />
+    <Content Include="images\santander.jpg" />
+    <Content Include="images\siteRJMGrs.png" />
+    <Content Include="images\sitesBAAC.png" />
+    <Content Include="images\sitesPEJPCE.png" />
+    <Content Include="images\sitesPEJPCE2.png" />
+    <Content Include="images\sitesSPPR.png" />
+    <Content Include="images\souzacruz.jpg" />
+    <Content Include="images\srdesites.png" />
+    <Content Include="images\sura.jpg" />
+    <Content Include="images\suvinil.jpg" />
+    <Content Include="images\tempoAssist.jpg" />
+    <Content Include="images\ticket.jpg" />
+    <Content Include="images\tim %281%29.jpg" />
+    <Content Include="images\tim.jpg" />
+    <Content Include="images\toscani.png" />
+    <Content Include="images\vivo.jpg" />
+    <Content Include="images\volkswagen.jpg" />
+    <Content Include="images\walle.gif" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AudioConvert.cs" />
+    <Compile Include="AudioRecognize.cs" />
+    <Compile Include="Bing\BingGeoSpatialService.cs" />
+    <Compile Include="Bing\LocationApiResponse.cs" />
+    <Compile Include="Controllers\ManagerProactiveController.cs" />
+    <Compile Include="Controllers\ProactiveMessageController.cs" />
+    <Compile Include="Emojis.cs" />
+    <Compile Include="Helpers\DateTimeExtensions.cs" />
+    <Compile Include="Helpers\DialogHelper.cs" />
+    <Compile Include="Helpers\EntityRecommendationExtensions.cs" />
+    <Compile Include="Helpers\StringExtensions.cs" />
+    <Compile Include="Infra\Configurations\UserActivityConfig.cs" />
+    <Compile Include="Infra\Context\BotContext.cs" />
+    <Compile Include="JsonResource.cs" />
+    <Compile Include="LuisClient.cs" />
+    <Compile Include="LUIS\Entidade.cs" />
+    <Compile Include="Migrations\201709122212532_inicial.cs" />
+    <Compile Include="Migrations\201709122212532_inicial.Designer.cs">
+      <DependentUpon>201709122212532_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Agenda.cs" />
+    <Compile Include="Models\Atividade.cs" />
+    <Compile Include="Models\Bot.cs" />
+    <Compile Include="Models\Cargo.cs" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialogs\RootLuisDialog.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Empresa.cs" />
+    <Compile Include="Models\Enumaration.cs" />
+    <Compile Include="Models\Faturamento.cs" />
+    <Compile Include="Models\GrupoCliente.cs" />
+    <Compile Include="Models\Imagem.cs" />
+    <Compile Include="LUIS\Intencao.cs" />
+    <Compile Include="Models\Informacao.cs" />
+    <Compile Include="Models\Mensagem.cs" />
+    <Compile Include="Models\NoneModel.cs" />
+    <Compile Include="Models\Premio.cs" />
+    <Compile Include="Models\Presidente.cs" />
+    <Compile Include="Models\Site.cs" />
+    <Compile Include="Models\TipoMensagem.cs" />
+    <Compile Include="Models\UserActivity.cs" />
+    <Compile Include="Models\Vestimenta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BrowserSession.cs" />
+    <Compile Include="Repositories\AgendaRepository.cs" />
+    <Compile Include="Repositories\InformacaoBotRepository.cs" />
+    <Compile Include="Repositories\NoneRepository.cs" />
+    <Compile Include="Repositories\SaudacaoRepository.cs" />
+    <Compile Include="Repositories\EmpresaRepository.cs" />
+    <Compile Include="Repositories\CargosRepository.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\MensagemRepository.cs" />
+    <Compile Include="Repositories\PresidenteRepository.cs" />
+    <Compile Include="Repositories\SiteRepository.cs" />
+    <Compile Include="Repositories\PremioRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\FaturamentoRepository.cs" />
+    <Compile Include="Repositories\VestimentaRepository.cs" />
+    <Compile Include="Services\AgendaDialogService.cs" />
+    <Compile Include="Services\InformacaoFuncionarioDialogService.cs" />
+    <Compile Include="Services\DialogServiceBase.cs" />
+    <Compile Include="Services\DialogServiceFactory.cs" />
+    <Compile Include="Services\FuncionarioDialogService.cs" />
+    <Compile Include="Services\InformacaoBotDialogService.cs" />
+    <Compile Include="Services\HelpDialogService.cs" />
+    <Compile Include="Services\LocalizacaoDialogService.cs" />
+    <Compile Include="Services\ProactiveService.cs" />
+    <Compile Include="Services\UsuarioMalcriadoDialogService.cs" />
+    <Compile Include="Services\SaudacaoDialogService.cs" />
+    <Compile Include="Services\InstitucionalDialogService.cs" />
+    <Compile Include="Services\NoneDialogService.cs" />
+    <Compile Include="Services\SiteDialogService.cs" />
+    <Compile Include="Services\PremiosDialogService.cs" />
+    <Compile Include="Services\FaturamentoDialogService.cs" />
+    <Compile Include="Services\CargoDialogService.cs" />
+    <Compile Include="Services\ClienteDialogService.cs" />
+    <Compile Include="Services\IDialogService.cs" />
+    <Compile Include="Services\VestimentaDialogService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="LuisBot.json" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\conexaoliq - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\conexaoliq - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ctxpoc - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ctxpoc - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Prod.pubxml" />
+    <Content Include="Resources\clientes.json" />
+    <Content Include="Resources\premios.json" />
+    <Content Include="Resources\sites.json" />
+    <Content Include="Resources\locations.json" />
+    <Content Include="Resources\presidentes.json" />
+    <Content Include="Resources\empresa.json" />
+    <Content Include="Resources\cargos.json" />
+    <Content Include="Resources\mensagens.json" />
+    <Content Include="Resources\saudacoes.json" />
+    <Content Include="Resources\bot.json" />
+    <Content Include="Resources\agenda.json" />
+    <Content Include="Resources\vestimenta.json" />
+    <Content Include="Resources\none.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709122212532_inicial.resx">
+      <DependentUpon>201709122212532_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3979/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:3979/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

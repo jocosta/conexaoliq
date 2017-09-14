@@ -1,0 +1,371 @@
+[
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/atlantico.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/bvFinanceira1.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/citibank.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/claro.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/fenosa.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/globo.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/itau.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/latamAirlines.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/net.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/intermedica.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/oi.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/rede.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/santander.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/souzacruz.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/ticket.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/tim.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/vivo.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 0,
+      "displayName": "BPO I CRM"
+    },
+    "imagem": {
+      "caminho": "images/volkswagen.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/ajinomoto.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/canon.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/castrol.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/coteminas.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/femsa.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/ferrerorocher.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/hp1.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/metlife.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/nespresso.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/oi.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/olympicus.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/philips.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/portoSeguro.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/royal-canin.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/sura.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/suvinil.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 1,
+      "displayName": "MARKETING SOLUTIONS"
+    },
+    "imagem": {
+      "caminho": "images/tim.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/albertEinstein.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/baxter.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/elektro.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/goldencross.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/oi.jpg"
+    }
+  },
+  {
+    "grupoCliente": {
+      "value": 2,
+      "displayName": "IT"
+    },
+    "imagem": {
+      "caminho": "images/tempoAssist.jpg"
+    }
+  }
+]

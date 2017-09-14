@@ -1,0 +1,66 @@
+{
+  "textos": [
+    {
+      "texto": "Eu sou um robô controlado por inteligência artificial.",
+      "tags": [ "quem", "quem é" ],
+      "exibirCriadores": false,
+      "exibirImagemBot": true
+    },
+    {
+      "texto": "Bot ou Chatbot é um programa de computador que tenta simular um ser humano na conversação com as pessoas. O objetivo é responder as perguntas de tal forma que as pessoas tenham a impressão de estar conversando com outra pessoa e não com um programa de computador.",
+      "tags": [ "o que é", "se define", "se defina", "bot" ],
+      "exibirCriadores": false
+    },
+    {
+      "texto": "Eu sou um robô que ainda não tem um nome definido... @triste",
+      "tags": [ "nome", "chamar", "te chamar" ],
+      "exibirCriadores": false,
+      "exibirImagemBot": true
+    },
+    {
+      "texto": "Vou te apresentar a equipe de inovação que me criou. @piscada ",
+      "tags": [ "criador", "criadores", "criou", "desenvolvedores", "desenvolveu", "programadores", "programador", "engenheiros", "filho" ],
+      "exibirCriadores": true
+    },
+    {
+      "texto": "Eu não tenho um pai exatamente, mas tenho criadores! Da uma olhadinha @piscada",
+      "tags": [ "pai", "pais", "papai", "paizinho" ],
+      "exibirCriadores": true
+    },
+    {
+      "texto": "Eu não tenho uma mãe... @triste Mas vou te apresentar meus criadores @piscada",
+      "tags": [ "mãe" ],
+      "exibirCriadores": true
+    }
+  ],
+  "criadores": [
+    {
+      "NomePessoa": "José Romualdo Costa Filho",
+      "DescricaoCargo": "Analista de Sistemas Sênior",
+      "Imagem": { "Caminho": "images/jose_romualdo.jpg" }
+    },
+    {
+      "NomePessoa": "Jefferson Sampaio Mesquita",
+      "DescricaoCargo": "Analista de Sistemas Sênior",
+      "Imagem": { "Caminho": "images/jefferson_mesquita.jpg" }
+    },
+    {
+      "NomePessoa": "Khaled Mohamad Abdul Rahaman",
+      "DescricaoCargo": "Analista de Sistemas Sênior",
+      "Imagem": { "Caminho": "images/khaled.jpg" }
+    },
+    {
+      "NomePessoa": "José Adriano",
+      "DescricaoCargo": "Consultor de TI",
+      "Imagem": { "Caminho": "images/jose_adriano.jpg" }
+    },
+    {
+      "NomePessoa": "Dante Minucci",
+      "DescricaoCargo": "Gerente de Inovação",
+      "Imagem": { "Caminho": "images/dante.png" }
+    }
+  ],
+
+  "imagemBot": "bot.gif"
+
+}

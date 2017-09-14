@@ -1,0 +1,23 @@
+﻿[
+  {
+    "nome": "Augusta",
+    "endereco": "Rua Augusta, 1846 Cerqueira Cesar – São Paulo - SP",
+    "imagem": {
+      "caminho": "http://www.contax.com.br/wp-content/themes/contax/mapa/brasil/foto-AUGUSTA.jpg?v=1"
+    }
+  },
+  {
+    "nome": "Alegria",
+    "endereco": "Rua da Alegria, 82/154 São Paulo - SP",
+    "imagem": {
+      "caminho": "http://www.contax.com.br/wp-content/themes/contax/mapa/brasil/foto-ALEGRIA.jpg"
+    }
+  },
+  {
+    "nome": "Alphaville",
+    "endereco": "Avenida Aruanã, nº 280/352 - Parte Alphaville - SP",
+    "imagem": {
+      "caminho": "http://www.contax.com.br/wp-content/themes/contax/mapa/brasil/foto-TODO-ALPHAVILLE.jpg"
+    }
+  }
+]

@@ -1,0 +1,836 @@
+﻿{
+  "Navegantes":
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -29.9979942,
+        -51.202448,
+        -29.9957458,
+        -51.199852
+      ],
+      "name": "Rua Beirute, 50, Navegantes, Porto Alegre - RS, 90240-080, Brazil",
+      "point": {
+        "coordinates": [
+          -29.99687,
+          -51.20115
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Beirute, 50",
+        "adminDistrict": "RS",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Beirute, 50, Navegantes, Porto Alegre - RS, 90240-080, Brazil",
+        "locality": "Porto Alegre",
+        "postalCode": "90240-080"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -29.99687,
+            -51.20115
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -29.99692,
+            -51.20094
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "Luigi Amorese":    
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -23.29426,
+        -51.20552,
+        -23.29232,
+        -51.20277
+      ],
+      "name": "Avenida Luigi Amorese, Ciclo III, Londrina - PR, 86073-050, Brazil",
+      "point": {
+        "coordinates": [
+          -23.29304,
+          -51.2045
+        ]
+      },
+      "address": {
+        "addressLine": "Avenida Luigi Amorese",
+        "adminDistrict": "PR",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Avenida Luigi Amorese, Ciclo III, Londrina - PR, 86073-050, Brazil",
+        "locality": "Londrina",
+        "postalCode": "86073-050"
+      },
+      "confidence": "Medium",
+      "entityType": "RoadBlock",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -23.29304,
+            -51.2045
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -23.29304,
+            -51.2045
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Ambiguous",
+        "UpHierarchy"
+      ]
+    }
+  ,
+  "Alegria": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -23.6171126,
+        -46.5919633,
+        -23.6148643,
+        -46.5895095
+      ],
+      "name": "Rua da Alegria, 82, Sacomã, Sao Paulo - SP, 04235-020, Brazil",
+      "point": {
+        "coordinates": [
+          -23.6159885,
+          -46.5907364
+        ]
+      },
+      "address": {
+        "addressLine": "Rua da Alegria, 82",
+        "adminDistrict": "SP",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua da Alegria, 82, Sacomã, Sao Paulo - SP, 04235-020, Brazil",
+        "locality": "Sao Paulo",
+        "postalCode": "04235-020"
+      },
+      "confidence": "Medium",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -23.6159885,
+            -46.5907364
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -23.6160494,
+            -46.5906051
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Ambiguous"
+      ]
+    } 
+  ,
+  "Augusta": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -23.5599242,
+        -46.6622664,
+        -23.5576758,
+        -46.6598136
+      ],
+      "name": "Rua Augusta, 1846, Cerqueira César, Sao Paulo - SP, 01412-000, Brazil",
+      "point": {
+        "coordinates": [
+          -23.5588,
+          -46.66104
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Augusta, 1846",
+        "adminDistrict": "SP",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Augusta, 1846, Cerqueira César, Sao Paulo - SP, 01412-000, Brazil",
+        "locality": "Sao Paulo",
+        "postalCode": "01412-000"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -23.5588,
+            -46.66104
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -23.55885,
+            -46.66098
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "edif.Adm.Alphaville":
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -23.5599242,
+        -46.6622664,
+        -23.5576758,
+        -46.6598136
+      ],
+      "name": "Rua Augusta, 1846, Cerqueira César, Sao Paulo - SP, 01412-000, Brazil",
+      "point": {
+        "coordinates": [
+          -23.5588,
+          -46.66104
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Augusta, 1846",
+        "adminDistrict": "SP",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Augusta, 1846, Cerqueira César, Sao Paulo - SP, 01412-000, Brazil",
+        "locality": "Sao Paulo",
+        "postalCode": "01412-000"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -23.5588,
+            -46.66104
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -23.55885,
+            -46.66098
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "Mackenzie": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -22.9020342,
+        -43.1885903,
+        -22.8997858,
+        -43.1861497
+      ],
+      "name": "Rua Alexandre MacKenzie, 69, Centro, Rio de Janeiro - RJ, 20221-410, Brazil",
+      "point": {
+        "coordinates": [
+          -22.90091,
+          -43.18737
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Alexandre MacKenzie, 69",
+        "adminDistrict": "RJ",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Alexandre MacKenzie, 69, Centro, Rio de Janeiro - RJ, 20221-410, Brazil",
+        "locality": "Rio de Janeiro",
+        "postalCode": "20221-410"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -22.90091,
+            -43.18737
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -22.90089,
+            -43.18735
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+ ,
+  "Niterói":
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -22.8931188,
+        -43.1216305,
+        -22.8908704,
+        -43.11919
+      ],
+      "name": "Rua São Pedro, 128, Centro, Niterói - RJ, 24020-055, Brazil",
+      "point": {
+        "coordinates": [
+          -22.8919946,
+          -43.1204103
+        ]
+      },
+      "address": {
+        "addressLine": "Rua São Pedro, 128",
+        "adminDistrict": "RJ",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua São Pedro, 128, Centro, Niterói - RJ, 24020-055, Brazil",
+        "locality": "Niterói",
+        "postalCode": "24020-055"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -22.8919946,
+            -43.1204103
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -22.89186,
+            -43.1204199
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+ ,
+  "Mauá":
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -22.9002442,
+        -43.1818003,
+        -22.8979958,
+        -43.1793597
+      ],
+      "name": "Rua Beneditinos, 15, Centro, Rio de Janeiro - RJ, 20081-050, Brazil",
+      "point": {
+        "coordinates": [
+          -22.89912,
+          -43.18058
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Beneditinos, 15",
+        "adminDistrict": "RJ",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Beneditinos, 15, Centro, Rio de Janeiro - RJ, 20081-050, Brazil",
+        "locality": "Rio de Janeiro",
+        "postalCode": "20081-050"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -22.89912,
+            -43.18058
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -22.89899,
+            -43.1805
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "Prado II":     
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -19.3619899749756,
+        -49.8713417053223,
+        -18.6074905395508,
+        -49.1789283752441
+      ],
+      "name": "Ituiutaba, Brazil",
+      "point": {
+        "coordinates": [
+          -18.9653396606445,
+          -49.4631309509277
+        ]
+      },
+      "address": {
+        "adminDistrict": "MG",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Ituiutaba, Brazil",
+        "locality": "Ituiutaba"
+      },
+      "confidence": "Low",
+      "entityType": "PopulatedPlace",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -18.9653396606445,
+            -49.4631309509277
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "UpHierarchy"
+      ]
+    },
+  "Comércio":
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -12.9724299,
+        -38.51274,
+        -12.97165,
+        -38.5119
+      ],
+      "name": "Rua Lauro Müller, Comércio, Salvador - BA, 40015-030, Brazil",
+      "point": {
+        "coordinates": [
+          -12.97228,
+          -38.51207
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Lauro Müller",
+        "adminDistrict": "BA",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Lauro Müller, Comércio, Salvador - BA, 40015-030, Brazil",
+        "locality": "Salvador",
+        "postalCode": "40015-030"
+      },
+      "confidence": "Medium",
+      "entityType": "RoadBlock",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -12.97228,
+            -38.51207
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -12.97228,
+            -38.51207
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Ambiguous"
+      ]
+    },
+    
+  "Cabula": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -12.9576206,
+        -38.4558658,
+        -12.9553723,
+        -38.4535588
+      ],
+      "name": "Rua Silveira Martins, 355, Cabula, Salvador - BA, 41180-010, Brazil",
+      "point": {
+        "coordinates": [
+          -12.9564965,
+          -38.4547123
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Silveira Martins, 355",
+        "adminDistrict": "BA",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Silveira Martins, 355, Cabula, Salvador - BA, 41180-010, Brazil",
+        "locality": "Salvador",
+        "postalCode": "41180-010"
+      },
+      "confidence": "Medium",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -12.9564965,
+            -38.4547123
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -12.9565328,
+            -38.4548456
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Ambiguous"
+      ]
+    }
+  ,
+  "Boa Viagem": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -12.9302499,
+        -38.51124,
+        -12.92943,
+        -38.51062
+      ],
+      "name": "Rua Polydoro Bittencourt, Bonfim, Salvador - BA, 40414-340, Brazil",
+      "point": {
+        "coordinates": [
+          -12.92983,
+          -38.51094
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Polydoro Bittencourt",
+        "adminDistrict": "BA",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Polydoro Bittencourt, Bonfim, Salvador - BA, 40414-340, Brazil",
+        "locality": "Salvador",
+        "postalCode": "40414-340"
+      },
+      "confidence": "Medium",
+      "entityType": "RoadBlock",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -12.92983,
+            -38.51094
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -12.92983,
+            -38.51094
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "UpHierarchy"
+      ]
+    }
+  ,
+  "Santo Amaro": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -8.0510342,
+        -34.8767153,
+        -8.0487858,
+        -34.8744447
+      ],
+      "name": "Rua Vinte e Quatro de Agosto, 209, Santo Amaro, Recife - PE, 50040-190, Brazil",
+      "point": {
+        "coordinates": [
+          -8.04991,
+          -34.87558
+        ]
+      },
+      "address": {
+        "addressLine": "Rua Vinte e Quatro de Agosto, 209",
+        "adminDistrict": "PE",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua Vinte e Quatro de Agosto, 209, Santo Amaro, Recife - PE, 50040-190, Brazil",
+        "locality": "Recife",
+        "postalCode": "50040-190"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -8.04991,
+            -34.87558
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -8.04995,
+            -34.8756
+          ],
+          "calculationMethod": "Rooftop",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "João Pessoa": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -7.21202,
+        -34.84187,
+        -7.21128,
+        -34.84037
+      ],
+      "name": "Rua das Mangabeiras, Mucumago, João Pessoa - PB, 58066-102, Brazil",
+      "point": {
+        "coordinates": [
+          -7.21165,
+          -34.8411199
+        ]
+      },
+      "address": {
+        "addressLine": "Rua das Mangabeiras",
+        "adminDistrict": "PB",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Rua das Mangabeiras, Mucumago, João Pessoa - PB, 58066-102, Brazil",
+        "locality": "João Pessoa",
+        "postalCode": "58066-102"
+      },
+      "confidence": "Medium",
+      "entityType": "RoadBlock",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -7.21165,
+            -34.8411199
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -7.21165,
+            -34.8411199
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "UpHierarchy"
+      ]
+    }
+  ,
+  "Fortaleza": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -3.7595317,
+        -38.5326345,
+        -3.7572834,
+        -38.5303813
+      ],
+      "name": "Avenida Borges de Melo, 1655, Fátima, Fortaleza - CE, 60415-510, Brazil",
+      "point": {
+        "coordinates": [
+          -3.7584075,
+          -38.5315079
+        ]
+      },
+      "address": {
+        "addressLine": "Avenida Borges de Melo, 1655",
+        "adminDistrict": "CE",
+        "countryRegion": "Brazil",
+        "formattedAddress": "Avenida Borges de Melo, 1655, Fátima, Fortaleza - CE, 60415-510, Brazil",
+        "locality": "Fortaleza",
+        "postalCode": "60415-510"
+      },
+      "confidence": "High",
+      "entityType": "Address",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -3.7584075,
+            -38.5315079
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -3.7585081,
+            -38.531598
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Good"
+      ]
+    }
+  ,
+  "Rio Branco": 
+    {
+      "__type": "Location:http://schemas.microsoft.com/search/local/ws/rest/v1",
+      "bbox": [
+        -9.95286,
+        -67.88308,
+        -9.93549,
+        -67.86221
+      ],
+      "name": "BR-364, Distrito Industrial, Rio Branco - AC, Brazil",
+      "point": {
+        "coordinates": [
+          -9.93817,
+          -67.8799
+        ]
+      },
+      "address": {
+        "addressLine": "BR-364",
+        "adminDistrict": "AC",
+        "countryRegion": "Brazil",
+        "formattedAddress": "BR-364, Distrito Industrial, Rio Branco - AC, Brazil",
+        "locality": "Rio Branco"
+      },
+      "confidence": "Medium",
+      "entityType": "RoadBlock",
+      "geocodePoints": [
+        {
+          "coordinates": [
+            -9.93817,
+            -67.8799
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Display"
+          ]
+        },
+        {
+          "coordinates": [
+            -9.93817,
+            -67.8799
+          ],
+          "calculationMethod": "Interpolation",
+          "usageTypes": [
+            "Route"
+          ]
+        }
+      ],
+      "matchCodes": [
+        "Ambiguous"
+      ]
+    }  
+}

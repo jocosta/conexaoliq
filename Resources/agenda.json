@@ -1,0 +1,193 @@
+﻿[
+  {
+    "data": "14/09/2017",
+    "atividades": [
+      {
+        "inicio": "09:00",
+        "fim": "09:10",
+        "descricao": "Acomodação das pessoas + Explicação sobre as etapas do dia",
+        "responsavel": "Mestre Cerimônias: Fabrícia Ouriveis"
+      },
+      {
+        "inicio": "09:10",
+        "fim": "10:10",
+        "descricao": "Desafios de hoje, rumo ao futuro",
+        "responsavel": "Nelson "
+      },
+      {
+        "inicio": "10:10",
+        "fim": "10:30",
+        "descricao": "Planejamento Estratégico (5 anos)",
+        "responsavel": "Cris Barretto"
+      },
+      {
+        "inicio": "10:30",
+        "fim": "11:00",
+        "descricao": "Plano de Marketing, Novos Mercados e Trade",
+        "responsavel": "Marcelo Chianello"
+      },
+      {
+        "inicio": "11:00",
+        "fim": "11:20",
+        "descricao": "Coffee Break",
+        "responsavel": "-"
+      },
+      {
+        "inicio": "11:20",
+        "fim": "11:50",
+        "descricao": "Plano Comercial e Produtos",
+        "responsavel": "Fátima Oliveira"
+      },
+      {
+        "inicio": "11:50",
+        "fim": "12:20",
+        "descricao": "Execução Operacional como Estratégia",
+        "responsavel": "Chianello + Ana Coelho"
+      },
+      {
+        "inicio": "12:20",
+        "fim": "12:50",
+        "descricao": "Capital Humano como diferencial estratégico",
+        "responsavel": "Andrei Passig		"
+      },
+      {
+        "inicio": "12:50",
+        "fim": "14:00",
+        "descricao": "Almoço",
+        "responsavel": "-		"
+      },
+      {
+        "inicio": "14:00",
+        "fim": "14:30",
+        "descricao": "Tecnologia para um futuro smart",
+        "responsavel": "João Mendes"
+      },
+      {
+        "inicio": "14:30",
+        "fim": "14:50",
+        "descricao": "Responsabilidade é Inegociável",
+        "responsavel": "Cris Cé"
+      },
+      {
+        "inicio": "14:50",
+        "fim": "16:20",
+        "descricao": "Resumo Diagnóstico, Posicionamento e Identidade",
+        "responsavel": "Chianello + Futurebrand"
+      },
+      {
+        "inicio": "16:20",
+        "fim": "16:40",
+        "descricao": "O que é marca, importância da marca interna e externa",
+        "responsavel": "Futurebrand		"
+      },
+      {
+        "inicio": "16:40",
+        "fim": "17:00",
+        "descricao": "Coffee Break",
+        "responsavel": "-		"
+      },
+      {
+        "inicio": "17:00",
+        "fim": "18:00",
+        "descricao": "Palestrante - Tema: O desafio do improvável",
+        "responsavel": "Definido"
+      },
+      {
+        "inicio": "18:00",
+        "fim": "18:20",
+        "descricao": "Momento \"Somos parte do show\" - colaboradores",
+        "responsavel": "Link Valores - RH"
+      },
+      {
+        "inicio": "18:20",
+        "fim": "18:30",
+        "descricao": "Encerramento + vídeo Making off",
+        "responsavel": "Nelson + Chianello + Mestre Cerimônia	"
+      },
+      {
+        "inicio": "18:30",
+        "fim": "20:30",
+        "descricao": "Intervalo: atividades livres",
+        "responsavel": "Marketing + Hotel"
+      },
+      {
+        "inicio": "20:30",
+        "fim": "22:30",
+        "descricao": "Jantar Confraternização",
+        "responsavel": "Sala privativa"
+      },
+      {
+        "inicio": "22:30",
+        "fim": "00:30",
+        "descricao": "After dinner",
+        "responsavel": "Espaço não privativo"
+      }
+
+    ]
+  },
+  {
+    "data": "15/09/2017",
+    "atividades": [
+      {
+        "inicio": "09:00",
+        "fim": "09:10",
+        "descricao": "Abertura + Explicação etapas do dia",
+        "responsavel": "Mestre Cerimônias + Futurebrand"
+      },
+      {
+        "inicio": "09:10",
+        "fim": "10:10",
+        "descricao": "Mergulho Qualidades + Dinâmica 2 (Cada grupo trabalhará uma qualidade)",
+        "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "10:10",
+        "fim": "11:10",
+        "descricao": "Mergulho nos Valores + Dinâmica 1 (Cada grupo trabalhará um valor)",
+        "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "11:10",
+        "fim": "11:30",
+        "descricao": "Coffee Break",
+        "responsavel": "--"
+      },
+      {
+        "inicio": "11:30",
+        "fim": "12:00",
+        "descricao": "Priorização das ações discutidas nas dinâmicas.",
+        "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "12:00",
+        "fim": "12:30",
+        "descricao": "Plano de ação - definição do plano de implantação (curto, médio e longo prazo)",
+        "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "12:30",
+        "fim": "13:20",
+        "descricao": "Resultados das dinâmicas (10 min por líder, serão 5 no total)",
+        "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "13:20",
+        "fim": "13:40",
+        "descricao": "Atividade de Encerramento",
+        "responsavel": "A definir"
+      },
+      {
+        "inicio": "13:40",
+        "fim": "13:50",
+        "descricao": "Encerramento (reforçar desafios, composição do Comitê de Implantação)",
+        "responsavel": "Nelson + Chianello"
+      },
+      {
+        "inicio": "13:50",
+        "fim": "14:50",
+        "descricao": "Almoço",
+        "responsavel": "--"
+      }
+    ]
+  }
+]

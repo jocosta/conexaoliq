@@ -1,0 +1,10 @@
+obj/
+
+bin/
+logs/
+
+packages/
+
+.vs/
+logs/2017-09-13.log
+logs/2017-09-13.log

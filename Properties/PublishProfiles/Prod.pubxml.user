@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\WEBCTX21AZPRD\Sites\bots.contax.com.br\conexaoliq</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>09/12/2017 10:41:52</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>09/12/2017 10:41:52</publishTime>
+    </File>
+    <File Include="bin/ar/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>11/23/2016 23:19:28</publishTime>
+    </File>
+    <File Include="bin/Chronic.dll">
+      <publishTime>09/05/2016 10:16:50</publishTime>
+    </File>
+    <File Include="bin/cs/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/CTX.Bot.ConexaoLiq.dll">
+      <publishTime>09/13/2017 21:53:02</publishTime>
+    </File>
+    <File Include="bin/de-dE/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/en/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/03/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/03/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/fa/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>06/07/2017 12:51:18</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/LuisBot.dll">
+      <publishTime>09/12/2017 10:41:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bot.Builder.Autofac.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bot.Builder.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bot.Builder.Location.dll">
+      <publishTime>05/22/2017 16:01:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bot.Connector.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Protocol.Extensions.dll">
+      <publishTime>06/03/2017 16:09:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Rest.ClientRuntime.dll">
+      <publishTime>11/22/2016 09:55:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>10/25/2016 10:48:08</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>09/13/2017 14:58:08</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>08/08/2017 19:19:52</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>08/26/2015 16:33:34</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>06/03/2017 16:09:04</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/zh-hans/Microsoft.Bot.Builder.resources.dll">
+      <publishTime>05/15/2017 23:01:30</publishTime>
+    </File>
+    <File Include="default.htm">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/agostinelii.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/ajinomoto.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/albertEinstein.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/alexandremorais.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/ana_coelho.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/andrei_passing.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/atlantico.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/baxter.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/bot.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/bot_crying.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/bradesco.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/bvFinanceira1.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/canon.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/castrol.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/celio.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/citibank.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/claro.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios11.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios2.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios3.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios4.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios5.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios6.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/content-premios7.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/coteminas.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/cristiane_barretto.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/cristiane_ce.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/cristina_barretto.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/DanielDonaire.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/dante.jpg">
+      <publishTime>08/30/2017 17:39:10</publishTime>
+    </File>
+    <File Include="images/dante.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/elektro.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/fatima_oliveira.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/FelipeVilla.png">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/femsa.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/fenosa.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/ferrerorocher.jpg">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/gifs/apwu.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/gifs/braddance.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/gifs/chegandofashion.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/gifs/chloe.gif">
+      <publishTime>09/13/2017 17:59:55</publishTime>
+    </File>
+    <File Include="images/gifs/choofed.gif">
+      <publishTime>09/13/2017 17:59:55</publishTime>
+    </File>
+    <File Include="images/gifs/festavestuario.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/gifs/godhi.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/gifs/goodevening.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/gifs/julgandovestuario.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/gifs/rdlol.gif">
+      <publishTime>09/13/2017 17:59:55</publishTime>
+    </File>
+    <File Include="images/gifs/stumped.gif">
+      <publishTime>09/13/2017 17:59:55</publishTime>
+    </File>
+    <File Include="images/gifs/tpo.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="images/gifs/traje.gif">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="images/gifs/vestuarioduvida.gif">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/gifs/vestuariofashion.gif">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/gifs/w8wut.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/gifs/whowut.gif">
+      <publishTime>09/13/2017 14:58:33</publishTime>
+    </File>
+    <File Include="images/globo.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/goldencross.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/highlights-phrase.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/highlights-regex.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/hp1.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/image-pending.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/intermedica.jpg">
+      <publishTime>09/06/2017 11:24:57</publishTime>
+    </File>
+    <File Include="images/ioshionagasaki.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/itau.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/jefferson_mesquita.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/joao_mendes.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/joao_mendes.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/josecarlos.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/josePatriMarciomonial.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/jose_adriano.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/jose_romualdo.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/khaled.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/klaus.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/latamAirlines.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/marcelo_chianello.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/marco.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/mariafernanda.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/metlife.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/nelson_armbrust.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/nespresso.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/net.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/oi %281%29.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/oi %282%29.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/oi.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/olympicus.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/orlando.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/orlando.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/outcome.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/philips.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/portoSeguro.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/prereqs-apikey.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/prereqs-appid.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/prereqs-import.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/prevedel.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/prevedel.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/rede.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/royal-canin.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/santander.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/siteRJMGrs.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/sitesBAAC.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/sitesPEJPCE.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/sitesPEJPCE2.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/sitesSPPR.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/souzacruz.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/srdesites.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/sura.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/suvinil.jpg">
+      <publishTime>09/06/2017 11:28:57</publishTime>
+    </File>
+    <File Include="images/tempoAssist.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/ticket.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/tim %281%29.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/tim.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/toscani.png">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/vivo.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/volkswagen.jpg">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="images/walle.gif">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="LuisBot.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>09/13/2017 14:58:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/13/2017 12:58:57</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/12/2017 10:41:46</publishTime>
+    </File>
+    <File Include="Resources/agenda.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/bot.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/cargos.json">
+      <publishTime>09/13/2017 21:35:09</publishTime>
+    </File>
+    <File Include="Resources/clientes.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/empresa.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/locations.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/mensagens.json">
+      <publishTime>09/13/2017 18:02:40</publishTime>
+    </File>
+    <File Include="Resources/none.json">
+      <publishTime>09/13/2017 17:59:55</publishTime>
+    </File>
+    <File Include="Resources/premios.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/presidentes.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/saudacoes.json">
+      <publishTime>09/13/2017 20:48:08</publishTime>
+    </File>
+    <File Include="Resources/sites.json">
+      <publishTime>09/13/2017 12:58:56</publishTime>
+    </File>
+    <File Include="Resources/vestimenta.json">
+      <publishTime>09/13/2017 21:34:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/13/2017 20:50:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
