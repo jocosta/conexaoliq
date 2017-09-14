@@ -21,6 +21,7 @@
     using Models;
     using System.Net.Http.Headers;
     using System.IO;
+    using CTX.Bot.ConexaoLiq.Storage.BlobStorageDemo;
 
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -131,26 +132,30 @@
                     }
                     else if (attachment.ContentType == "image/jpeg" || attachment.ContentType == "image/png")
                     {
+                      
+
+                        await new ImageService().UploadImageAsync(attachment.ContentUrl);
+
                         // HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
-                        using (HttpClient httpClient = new HttpClient())
-                        {
-                            // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
-                            if ((message.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || message.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
-                                && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
-                            {
-                                var token = await new MicrosoftAppCredentials().GetTokenAsync();
-                                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                            }
+                        //using (HttpClient httpClient = new HttpClient())
+                        //{
+                        //    // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
+                        //    if ((message.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || message.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
+                        //        && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
+                        //    {
+                        //        var token = await new MicrosoftAppCredentials().GetTokenAsync();
+                        //        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        //    }
 
-                            var path = WebConfigurationManager.AppSettings["PhotosPath"];
+                        //    var path = WebConfigurationManager.AppSettings["PhotosPath"];
 
-                            File.WriteAllBytes($"{path}{message.ChannelId}_{message.From.Id}_{attachment.Name}",
-                                   new WebClient().DownloadData(attachment.ContentUrl));
+                        //    File.WriteAllBytes($"{path}{message.ChannelId}_{message.From.Id}_{attachment.Name}",
+                        //           new WebClient().DownloadData(attachment.ContentUrl));
 
-                            //    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
+                        //    //    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
 
-                            //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
-                        }
+                        //    //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
+                        //}
 
 
                     }
