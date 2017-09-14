@@ -21,6 +21,7 @@
     using Models;
     using System.Net.Http.Headers;
     using System.IO;
+    using CTX.Bot.ConexaoLiq.Storage.BlobStorageDemo;
     using Microsoft.IdentityModel.Protocols;
     using System.Configuration;
 
@@ -133,22 +134,11 @@
                     }
                     else if (attachment.ContentType == "image/jpeg" || attachment.ContentType == "image/png")
                     {
-                        var reply = message.CreateReply();
-                        using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
-                        {
-                            reply.Text = "Guardei a(s) sua(s) foto(s) aqui, mais tarde criarei um album pra gente"; 
+                      
 
-                            
+                        await new ImageService().UploadImageAsync(attachment.ContentUrl);
 
-                            var botClient = scope.Resolve<IConnectorClient>();
-                            await botClient.Conversations.ReplyToActivityAsync(reply);
-                        }
-
-                        return;
-
-                   
-                       
-                        //// HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
+                        // HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
                         //using (HttpClient httpClient = new HttpClient())
                         //{
                         //    // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
@@ -167,7 +157,8 @@
                         //    //    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
 
                         //    //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
-                   
+                        //}
+
 
                     }
                 }
