@@ -84,6 +84,11 @@
                     }
 
                 }
+                else if (activity.Text == "/cancelar-pesquisa-satisfacao")
+                {
+                    userData.SetProperty<bool>("IniciouPesquisa", false);
+                    await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
+                }
                 else if (activity.Text == "/iniciar-pesquisa-satisfacao" || iniciouPesquisa)
                 {
                     userData.SetProperty<bool>("IniciouPesquisa", true);
