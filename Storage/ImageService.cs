@@ -39,7 +39,7 @@ namespace CTX.Bot.ConexaoLiq.Storage
                             }
                             );
                     }
-                    string imageName = Guid.NewGuid().ToString() + "-" + Path.GetExtension(sourceUrl);
+                    string imageName = Guid.NewGuid().ToString() + ".jpg";
 
                     CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(imageName);
 
