@@ -3,6 +3,12 @@
     "data": "14/09/2017",
     "atividades": [
       {
+        "inicio": "07:00",
+        "fim": "07:10",
+        "descricao": "Bom dia!",
+        "responsavel": "LIQ"
+      },
+      {
         "inicio": "09:00",
         "fim": "09:10",
         "descricao": "Acomodação das pessoas + Explicação sobre as etapas do dia",
@@ -35,74 +41,74 @@
       {
         "inicio": "11:20",
         "fim": "11:50",
-        "descricao": "Plano Comercial e Produtos",
-        "responsavel": "Fátima Oliveira"
+        "descricao": "Marketing, Novos Mercados e Trade",
+        "responsavel": "Marcelo Chianello"
       },
       {
         "inicio": "11:50",
         "fim": "12:20",
-        "descricao": "Execução Operacional como Estratégia",
-        "responsavel": "Chianello + Ana Coelho"
+        "descricao": "Comercial e Produtos",
+        "responsavel": "Fátima Oliveira"
       },
       {
         "inicio": "12:20",
         "fim": "12:50",
-        "descricao": "Capital Humano como diferencial estratégico",
-        "responsavel": "Andrei Passig		"
+        "descricao": "Execução Operacional com Extratégia",
+        "responsavel": "Ana Coelho e Marcelo Chianello"
       },
       {
         "inicio": "12:50",
-        "fim": "14:00",
-        "descricao": "Almoço",
-        "responsavel": "-		"
+        "fim": "13:20",
+        "descricao": "Capital Humano como Diferencial Estratégico",
+        "responsavel": "Andrei Passig"
       },
       {
-        "inicio": "14:00",
-        "fim": "14:30",
+        "inicio": "13:20",
+        "fim": "14:40",
+        "descricao": "Almoço",
+        "responsavel": "LIQ"
+      },
+      {
+        "inicio": "14:40",
+        "fim": "15:10",
         "descricao": "Tecnologia para um futuro smart",
         "responsavel": "João Mendes"
       },
       {
-        "inicio": "14:30",
-        "fim": "14:50",
+        "inicio": "15:10",
+        "fim": "15:30",
         "descricao": "Responsabilidade é Inegociável",
         "responsavel": "Cris Cé"
       },
       {
-        "inicio": "14:50",
-        "fim": "16:20",
-        "descricao": "Resumo Diagnóstico, Posicionamento e Identidade",
-        "responsavel": "Chianello + Futurebrand"
-      },
-      {
-        "inicio": "16:20",
-        "fim": "16:40",
+        "inicio": "15:30",
+        "fim": "15:50",
         "descricao": "O que é marca, importância da marca interna e externa",
-        "responsavel": "Futurebrand		"
+        "responsavel": "Marcelo Chianello + Futurebrand"
       },
       {
-        "inicio": "16:40",
+        "inicio": "15:50",
         "fim": "17:00",
-        "descricao": "Coffee Break",
-        "responsavel": "-		"
+        "descricao": "Resumo Diagnóstico, Posicionamento e Identidade",
+        "responsavel": "Futurebrand"
       },
       {
         "inicio": "17:00",
-        "fim": "18:00",
+        "fim": "17:20",
+        "descricao": "Coffee Break",
+        "responsavel": "-"
+      },
+      {
+        "inicio": "17:20",
+        "fim": "18:20",
         "descricao": "Palestrante - Tema: O desafio do improvável",
         "responsavel": "Definido"
       },
       {
-        "inicio": "18:00",
-        "fim": "18:20",
-        "descricao": "Momento \"Somos parte do show\" - colaboradores",
-        "responsavel": "Link Valores - RH"
-      },
-      {
         "inicio": "18:20",
         "fim": "18:30",
-        "descricao": "Encerramento + vídeo Making off",
-        "responsavel": "Nelson + Chianello + Mestre Cerimônia	"
+        "descricao": "Encerramento",
+        "responsavel": "Nelson + Mestre Cerimônia"
       },
       {
         "inicio": "18:30",
@@ -121,13 +127,24 @@
         "fim": "00:30",
         "descricao": "After dinner",
         "responsavel": "Espaço não privativo"
+      },
+      {
+        "inicio": "00:30",
+        "fim": "00:40",
+        "descricao": "Boa Noite! Amanhã nos vemos novamente! Bom descanso!",
+        "responsavel": "LIQ"
       }
-
     ]
   },
   {
     "data": "15/09/2017",
     "atividades": [
+      {
+        "inicio": "07:00",
+        "fim": "07:10",
+        "descricao": "Bom dia!",
+        "responsavel": "LIQ"
+      },
       {
         "inicio": "09:00",
         "fim": "09:10",
@@ -136,57 +153,57 @@
       },
       {
         "inicio": "09:10",
-        "fim": "10:10",
-        "descricao": "Mergulho Qualidades + Dinâmica 2 (Cada grupo trabalhará uma qualidade)",
+        "fim": "09:30",
+        "descricao": "Apresentação Valores e Deslocamento para Salas de Trabalho",
         "responsavel": "Futurebrand"
       },
       {
-        "inicio": "10:10",
-        "fim": "11:10",
-        "descricao": "Mergulho nos Valores + Dinâmica 1 (Cada grupo trabalhará um valor)",
+        "inicio": "09:30",
+        "fim": "10:50",
+        "descricao": "Dinâmica 1: Mergulho nos Valores(Cada grupo trabalhará um valor)",
         "responsavel": "Futurebrand"
+      },
+      {
+        "inicio": "10:50",
+        "fim": "11:10",
+        "descricao": "Coffee Break",
+        "responsavel": "-"
       },
       {
         "inicio": "11:10",
-        "fim": "11:30",
-        "descricao": "Coffee Break",
-        "responsavel": "--"
-      },
-      {
-        "inicio": "11:30",
-        "fim": "12:00",
-        "descricao": "Priorização das ações discutidas nas dinâmicas.",
+        "fim": "12:10",
+        "descricao": "Dinâmica 2: Mergulho Qualidades (Cada grupo trabalhará uma qualidade).",
         "responsavel": "Futurebrand"
       },
       {
-        "inicio": "12:00",
-        "fim": "12:30",
-        "descricao": "Plano de ação - definição do plano de implantação (curto, médio e longo prazo)",
+        "inicio": "12:10",
+        "fim": "13:25",
+        "descricao": "Resultados das dinâmicas (15 min por líder, serão 5 no total)",
         "responsavel": "Futurebrand"
       },
       {
-        "inicio": "12:30",
-        "fim": "13:20",
-        "descricao": "Resultados das dinâmicas (10 min por líder, serão 5 no total)",
-        "responsavel": "Futurebrand"
-      },
-      {
-        "inicio": "13:20",
-        "fim": "13:40",
-        "descricao": "Atividade de Encerramento",
-        "responsavel": "A definir"
-      },
-      {
-        "inicio": "13:40",
-        "fim": "13:50",
+        "inicio": "13:25",
+        "fim": "13:45",
         "descricao": "Encerramento (reforçar desafios, composição do Comitê de Implantação)",
-        "responsavel": "Nelson + Chianello"
+        "responsavel": "Nelson"
+      },
+      {
+        "inicio": "13:45",
+        "fim": "14:00",
+        "descricao": "Foto LIQ",
+        "responsavel": "Equipe"
       },
       {
         "inicio": "13:50",
         "fim": "14:50",
         "descricao": "Almoço",
         "responsavel": "--"
+      },
+      {
+        "inicio": "15:00",
+        "fim": "15:10",
+        "descricao": "Boa Tarde! Foi muito bom contar com sua presença!",
+        "responsavel": "LIQ"
       }
     ]
   }

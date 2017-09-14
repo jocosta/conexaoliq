@@ -30,7 +30,11 @@ namespace CTX.Bot.ConexaoLiq.Services
 
             var empresa = _empresaRepository.Obter();
             var mensagem = empresa.Institucional.FirstOrDefault(c => c.Tags.Any(x => x.ToSearch().Like( ValorEntidade.Institucional.ToSearch())));
-            if (mensagem == null)
+            var msgs = new[] { "por que", "pq", "porque", "o que é", "o que" };
+
+            if(string.IsNullOrEmpty(ValorEntidade.Institucional) &&  msgs.Any(c =>  _activity.Text.ToLower().Contains(c)))
+                await PostAsync("Entendemos que precisávamos refletir uma de nossas principais características: a adaptabilidade LIQ é um nome criado a partir da palavra \"líquido\". Este nome foi escolhido por ser curto, moderno e disruptivo, fato que reforça esta flexibilidade fluidez e dinamismo. Uma empresa que se molda perfeitamente às necessidades dos clientes e ocupa, naturalmente, novos espaços.");
+            else if (mensagem == null)
                 await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.DadoInstitucionalNaoEncontrado));
             else
                 await PostAsync(mensagem.Texto);

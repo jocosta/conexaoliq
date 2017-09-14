@@ -43,32 +43,24 @@ namespace CTX.Bot.ConexaoLiq.Services
             else
             {
                 var vestimentas = new VestimentaRepository().Listar().OrderBy(o => o.Chave).ToList(); ;
-                _activity.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-                _activity.Attachments = new List<Attachment>();
+
                 foreach (var vestimenta in vestimentas)
                 {
                     await PostAsync($"{vestimenta.Texto}");
                     if (!string.IsNullOrEmpty(vestimenta.Imagem.Caminho))
                     {
-                        System.Threading.Thread.Sleep(500);
-                        await SendTyping();
-                        HeroCard thumb = new HeroCard()
+                        _activity.Attachments.Add(new Attachment()
                         {
-                            Images = new List<CardImage>()
-                        {
-                            new CardImage() { Url =  $"{UrlApi}{vestimenta.Imagem.Caminho}" }
-                        }
-                        };
-                        _activity.Attachments.Add(thumb.ToAttachment());
+                            ContentUrl = $"{UrlApi}{vestimenta.Imagem.Caminho}",
+                            ContentType = "image/gif",
+                            Name = "Liq"
+                        });
                         await PostAsync();
                     }
                     await SendTyping();
-                    System.Threading.Thread.Sleep(2000);
+
                 }
             }
-            
-
-
         }
     }
 }

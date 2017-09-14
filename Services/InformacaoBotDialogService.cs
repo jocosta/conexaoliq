@@ -32,7 +32,15 @@ namespace CTX.Bot.ConexaoLiq.Services
 
             var informacao = _informacaoBotRepository.Obter(ValorEntidade.InformacaoBot);
             if (informacao == null)
+            {
+                _activity.Attachments.Add(new Attachment()
+                {
+                    ContentUrl = $"{UrlApi}/images/bot.gif",
+                    ContentType = "image/gif",
+                    Name = "Liq"
+                });
                 await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.InformacaoBotPadrao));
+            }
             else
             {
                 await PostAsync(informacao.Texto);
@@ -56,7 +64,7 @@ namespace CTX.Bot.ConexaoLiq.Services
                 ContentType = "image/gif",
                 Name = "Liq"
             });
- 
+
 
             await PostAsync();
         }

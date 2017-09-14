@@ -58,6 +58,16 @@
       "NomePessoa": "Dante Minucci",
       "DescricaoCargo": "Gerente de Inovação",
       "Imagem": { "Caminho": "images/dante.png" }
+    },
+    {
+      "NomePessoa": "Orlando Bertholdo",
+      "DescricaoCargo": "Diretor de Sistemas",
+      "Imagem": { "Caminho": "images/orlando.png" }
+    },
+    {
+      "NomePessoa": "João Mendes",
+      "DescricaoCargo": "CIO - Chief Information Officer",
+      "Imagem": { "Caminho": "images/joao_mendes.png" }
     }
   ],
 

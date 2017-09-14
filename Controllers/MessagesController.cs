@@ -24,6 +24,8 @@
     using CTX.Bot.ConexaoLiq.Storage.BlobStorageDemo;
     using CTX.Bot.ConexaoLiq.Dialogs;
     using Microsoft.Bot.Builder.FormFlow;
+    using Microsoft.IdentityModel.Protocols;
+    using System.Configuration;
 
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -163,28 +165,15 @@
 
                         await new ImageService().UploadImageAsync(attachment.ContentUrl);
 
-                        // HttpPostedFileBase file = (HttpPostedFileBase)message.Attachments[0].Content;
-                        //using (HttpClient httpClient = new HttpClient())
-                        //{
-                        //    // Skype & MS Teams attachment URLs are secured by a JwtToken, so we need to pass the token from our bot.
-                        //    if ((message.ChannelId.Equals("skype", StringComparison.InvariantCultureIgnoreCase) || message.ChannelId.Equals("msteams", StringComparison.InvariantCultureIgnoreCase))
-                        //        && new Uri(attachment.ContentUrl).Host.EndsWith("skype.com"))
-                        //    {
-                        //        var token = await new MicrosoftAppCredentials().GetTokenAsync();
-                        //        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        //    }
+                        var reply = message.CreateReply();
+                        using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
+                        {
+                            reply.Text = $"Salvei a(s) sua(s) foto(s) aqui, mais tarde compartilho um album com você";
 
-                        //    var path = WebConfigurationManager.AppSettings["PhotosPath"];
-
-                        //    File.WriteAllBytes($"{path}{message.ChannelId}_{message.From.Id}_{attachment.Name}",
-                        //           new WebClient().DownloadData(attachment.ContentUrl));
-
-                        //    //    var contentLenghtBytes = responseMessage.Content.Headers.ContentLength;
-
-                        //    //await context.PostAsync($"Attachment of {attachment.ContentType} type and size of {contentLenghtBytes} bytes received.");
-                        //}
-
-
+                            var botClient = scope.Resolve<IConnectorClient>();
+                            await botClient.Conversations.ReplyToActivityAsync(reply);
+                        }
+                        return;
                     }
                 }
                 catch (Exception ex)
