@@ -118,18 +118,26 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 await PostAsync();
 
+                if (presidente.Nome == "Kim Jong-un")
+                {
+
+                    _activity.Attachments.Add(new Attachment()
+                    {
+                        ContentUrl = $"https://media.giphy.com/media/XDLJpjzyw76Sc/giphy.gif",
+                        ContentType = "image/gif",
+                        Name = "Booooooom"
+                    });
+                }
+
+                await PostAsync();
+
             }
             else
             {
                 await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.PresidentePaisNaoEncontrado));
             }
-
-
+            
             await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.QueroQueConhecaPresidenteEmpresa));
-
-
-
-
         }
     }
 }
