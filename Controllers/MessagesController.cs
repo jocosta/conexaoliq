@@ -30,30 +30,30 @@
             //_logger.Info(Newtonsoft.Json.JsonConvert.SerializeObject(activity));
 
 
-            var url = HttpContext.Current.Server.MapPath("~/");
+            //var url = HttpContext.Current.Server.MapPath("~/");
             if (activity.Type == ActivityTypes.Message)
             {
-                //try
-                //{
-                //    using (var context = new BotContext())
-                //    {
-                //        var userActivity = new UserActivity();
-                //        userActivity.Channel = activity.ChannelId;
-                //        userActivity.UserId = activity.From.Id;
-                //        userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
-                //        userActivity.Data = DateTime.Now;
-                //        userActivity.Id = Guid.NewGuid();
+                try
+                {
+                    using (var context = new BotContext())
+                    {
+                        var userActivity = new UserActivity();
+                        userActivity.Channel = activity.ChannelId;
+                        userActivity.UserId = activity.From.Id;
+                        userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
+                        userActivity.Data = DateTime.Now;
+                        userActivity.Id = Guid.NewGuid();
 
 
-                //        context.Activities.Add(userActivity);
+                        context.Activities.Add(userActivity);
 
-                //        context.SaveChanges();
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    _logger.Fatal(ex, "Erro ao salvar iteração");
-                //}
+                        context.SaveChanges();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.Fatal(ex, "Erro ao salvar iteração");
+                }
 
                 if (activity.Text == "/start")
                 {

@@ -27,17 +27,11 @@ namespace CTX.Bot.ConexaoLiq.Helpers
         public static SaudacaoPeriodoDia ObterPeriodoDia(this DateTime data)
         {
             if (data.Hour < 12)
-            {
                 return SaudacaoPeriodoDia.BomDia;
-            }
             else if (data.Hour < 18)
-            {
                 return SaudacaoPeriodoDia.BoaTarde;
-            }
             else
-            {
                 return SaudacaoPeriodoDia.BoaNoite;
-            }
         }
 
         public static string DiaDaSemana(this DateTime data)
@@ -47,7 +41,7 @@ namespace CTX.Bot.ConexaoLiq.Helpers
             return culture.DateTimeFormat.GetDayName(data.DayOfWeek);
 
         }
-        
+
         //public static DateTime GerarDataPorHorario(this DateTime data, string horario)
         //{
 

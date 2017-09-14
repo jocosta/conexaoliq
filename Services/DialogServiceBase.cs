@@ -138,39 +138,54 @@ namespace CTX.Bot.ConexaoLiq.Services
 
         public virtual async Task PostAsync(string text)
         {
-            var reply = CreateReply();
-            reply.Type = ActivityTypes.Message;
-            reply.AttachmentLayout = _activity.AttachmentLayout;
-            reply.Attachments = _activity.Attachments;
-
-            using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
+            try
             {
-                reply.Text = text;
+                var reply = CreateReply();
+                reply.Type = ActivityTypes.Message;
+                reply.AttachmentLayout = _activity.AttachmentLayout;
+                reply.Attachments = _activity.Attachments;
 
-                if (_textToSpeech && !string.IsNullOrEmpty(reply.Text))
+                using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
                 {
+                    reply.Text = text;
 
-                    var urlApiMedia = WebConfigurationManager.AppSettings["urlMedia"];
-                    var audio = await AudioConvert.TextToSpeech(reply.Text);
-                    if (!string.IsNullOrEmpty(audio))
+                    if (_textToSpeech && !string.IsNullOrEmpty(reply.Text))
                     {
-                        reply.Text = null;
-                        if (reply.Attachments == null)
-                            reply.Attachments = new List<Attachment>();
 
-
-                        reply.Attachments.Add(new AudioCard
+                        var urlApiMedia = WebConfigurationManager.AppSettings["urlMedia"];
+                        var audio = await AudioConvert.TextToSpeech(reply.Text);
+                        if (!string.IsNullOrEmpty(audio))
                         {
-                            Media = new List<MediaUrl> { new MediaUrl { Url = $"{urlApiMedia}{audio.Replace("./wav/", "")}" } }
-                        }.ToAttachment());
+                            reply.Text = null;
+                            if (reply.Attachments == null)
+                                reply.Attachments = new List<Attachment>();
+
+
+                            reply.Attachments.Add(new AudioCard
+                            {
+                                Media = new List<MediaUrl> { new MediaUrl { Url = $"{urlApiMedia}{audio.Replace("./wav/", "")}" } }
+                            }.ToAttachment());
+                        }
                     }
+
+                    var client = scope.Resolve<IConnectorClient>();
+                    await client.Conversations.ReplyToActivityAsync(reply);
+
+                    _activity.Attachments.Clear();
+
                 }
+            }
+            catch (Exception ex)
+            {
+                var reply = CreateReply();
+                reply.Type = ActivityTypes.Message;
 
-                var client = scope.Resolve<IConnectorClient>();
-                await client.Conversations.ReplyToActivityAsync(reply);
-
-                _activity.Attachments.Clear();
-
+                using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
+                {
+                    reply.Text = $"{ex.Message} Statck:{ex.StackTrace} Inner Exception: {ex?.InnerException.Message}";                    
+                    var client = scope.Resolve<IConnectorClient>();
+                    await client.Conversations.ReplyToActivityAsync(reply);
+                }
             }
         }
 

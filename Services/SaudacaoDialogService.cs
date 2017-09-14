@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
-using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis.Models;
 using Microsoft.Bot.Connector;
 using CTX.Bot.ConexaoLiq.Helpers;
-using CTX.Bot.ConexaoLiq.LUIS;
 using CTX.Bot.ConexaoLiq.Repositories;
-using Microsoft.Bot.Builder.Luis;
 using CTX.Bot.ConexaoLiq.Models;
 
 namespace CTX.Bot.ConexaoLiq.Services
@@ -41,13 +35,13 @@ namespace CTX.Bot.ConexaoLiq.Services
             {
                 informacao = _saudacaoRepository.Obter(saudacaoForaDePeriodo.ToString());
                 if (informacao.Texto.Contains("{0}"))
-                {
                     informacao.Texto = string.Format(informacao.Texto, DateTime.Now.ToString("HH:mm"));
-                }
             }
             else
+            {
                 informacao = _saudacaoRepository.Obter(saudacao);
-
+            }
+            
             if (informacao == null)
             {
                 _activity.Attachments.Add(new Attachment()
@@ -72,7 +66,6 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 await PostAsync(informacao.Texto);
             }
-
         }
     }
 }
