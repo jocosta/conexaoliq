@@ -96,9 +96,7 @@ namespace CTX.Bot.ConexaoLiq.Services
                 if (!atividades.Any())
                 {
                     await SendTyping();
-                    await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.AlgumasAtividadesEncontradas));
-
-                    var agendas = _agendaRepository.Listar().Where(c => c.Data.Date > dataAtual.Date).ToList();
+                    var agendas = _agendaRepository.Listar().Where(c => c.Data.Date >= dataAtual.Date).ToList();
 
                     await SendTyping();
                     await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.EnviandoAgendaCompleta));
@@ -208,10 +206,12 @@ namespace CTX.Bot.ConexaoLiq.Services
             var inicio = periodo.RetornarHoraInicioPeriodoDia(dataAtual);
             var fim = periodo.RetornarHoraFinalPeriodoDia(dataAtual);
 
-            if (inicio == null)
-                atividades = _agendaRepository.PesquisarAtividades(dataAtual).ToList();
-            else
+
+            if (inicio != null)
                 atividades = _agendaRepository.PesquisarAtividades(dataAtual, inicio.Value.ToShortTimeString(), fim.Value.ToShortTimeString()).ToList();
+
+            if (!atividades.Any())
+                atividades = _agendaRepository.PesquisarAtividades(dataAtual).ToList();
 
             await MensagemDadosAgendaAsync(atividades);
 
