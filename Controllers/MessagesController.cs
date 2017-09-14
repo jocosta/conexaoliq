@@ -22,12 +22,20 @@
     using System.Net.Http.Headers;
     using System.IO;
     using CTX.Bot.ConexaoLiq.Storage.BlobStorageDemo;
+    using CTX.Bot.ConexaoLiq.Dialogs;
+    using Microsoft.Bot.Builder.FormFlow;
 
     [BotAuthentication]
     public class MessagesController : ApiController
     {
         private static readonly bool IsSpellCorrectionEnabled = bool.Parse(WebConfigurationManager.AppSettings["IsSpellCorrectionEnabled"]);
         private readonly NLog.ILogger _logger = NLog.LogManager.GetCurrentClassLogger();
+
+        internal static IDialog<SandwichOrder> MakeRootDialog()
+        {
+            return Chain.From(() => FormDialog.FromForm(SandwichOrder.BuildForm));
+        }
+
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
             //_logger.Info(Newtonsoft.Json.JsonConvert.SerializeObject(activity));
@@ -36,22 +44,28 @@
             //var url = HttpContext.Current.Server.MapPath("~/");
             if (activity.Type == ActivityTypes.Message)
             {
+
+                StateClient stateClient = activity.GetStateClient();
+                BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
+
+                var iniciouPesquisa = userData.GetProperty<bool>("IniciouPesquisa");
+
                 try
                 {
-                    using (var context = new BotContext())
-                    {
-                        var userActivity = new UserActivity();
-                        userActivity.Channel = activity.ChannelId;
-                        userActivity.UserId = activity.From.Id;
-                        userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
-                        userActivity.Data = DateTime.Now;
-                        userActivity.Id = Guid.NewGuid();
+                    //using (var context = new BotContext())
+                    //{
+                    //    var userActivity = new UserActivity();
+                    //    userActivity.Channel = activity.ChannelId;
+                    //    userActivity.UserId = activity.From.Id;
+                    //    userActivity.Activity = Newtonsoft.Json.JsonConvert.SerializeObject(activity);
+                    //    userActivity.Data = DateTime.Now;
+                    //    userActivity.Id = Guid.NewGuid();
 
 
-                        context.Activities.Add(userActivity);
+                    //    context.Activities.Add(userActivity);
 
-                        context.SaveChanges();
-                    }
+                    //    context.SaveChanges();
+                    //}
                 }
                 catch (Exception ex)
                 {
@@ -70,6 +84,13 @@
                     }
 
                 }
+                else if (activity.Text == "/iniciar-pesquisa-satisfacao" || iniciouPesquisa)
+                {
+                    userData.SetProperty<bool>("IniciouPesquisa", true);
+                    await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
+
+                    await Conversation.SendAsync(activity, MakeRootDialog);
+                }
                 else
                 {
                     Task.Factory.StartNew(() => ConversationStart(activity));
@@ -86,6 +107,7 @@
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }
+
 
         private Activity HandleSystemMessage(Activity message)
         {
@@ -132,7 +154,7 @@
                     }
                     else if (attachment.ContentType == "image/jpeg" || attachment.ContentType == "image/png")
                     {
-                      
+
 
                         await new ImageService().UploadImageAsync(attachment.ContentUrl);
 

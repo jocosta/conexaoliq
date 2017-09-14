@@ -283,6 +283,7 @@
     <Compile Include="Bing\LocationApiResponse.cs" />
     <Compile Include="Controllers\ManagerProactiveController.cs" />
     <Compile Include="Controllers\ProactiveMessageController.cs" />
+    <Compile Include="Dialogs\PesquisaForm.cs" />
     <Compile Include="Emojis.cs" />
     <Compile Include="Helpers\DateTimeExtensions.cs" />
     <Compile Include="Helpers\DialogHelper.cs" />
