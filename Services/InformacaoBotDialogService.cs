@@ -43,10 +43,17 @@ namespace CTX.Bot.ConexaoLiq.Services
             }
             else
             {
-                await PostAsync(informacao.Texto);
-
                 if (informacao.ExibirImagemBot)
-                    await ImagemBotAsync(informacao);
+                {
+                    _activity.Attachments.Add(new Attachment()
+                    {
+                        ContentUrl = $"{UrlApi}/images/bot.gif",
+                        ContentType = "image/gif",
+                        Name = "Liq"
+                    });
+
+                }
+                await PostAsync(informacao.Texto);
 
                 if (informacao.ExibirCriadores)
                     await MensagemDadosCargoAsync(informacao.Criadores);
@@ -60,7 +67,7 @@ namespace CTX.Bot.ConexaoLiq.Services
 
             _activity.Attachments.Add(new Attachment()
             {
-                ContentUrl = $"{UrlApi}/images/{informacao.ImagemBot}",
+                ContentUrl = $"{UrlApi}/images/bot.gif",
                 ContentType = "image/gif",
                 Name = "Liq"
             });
