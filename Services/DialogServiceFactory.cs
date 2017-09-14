@@ -46,6 +46,8 @@ namespace CTX.Bot.ConexaoLiq.Services
                     return new AgendaDialogService(activity, luisResult, textToSpeech);
                 case Intencao.ConexaoLiqLocalizacao:
                     return new LocalizacaoDialogService(activity, luisResult, textToSpeech);
+                case Intencao.AgradecimentoDespedida:
+                    return new DespedidaDialogService(activity, luisResult, textToSpeech);
                 default:
                     return new NoneDialogService(activity, luisResult, textToSpeech);
             }
