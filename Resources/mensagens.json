@@ -238,5 +238,17 @@
   {
     "TipoMensagem": 33,
     "Texto": "Dei uma olhadinha na agenda e não encontrei nenhuma refeição agendada. @triste"
+  },
+  {
+    "TipoMensagem": 34,
+    "Texto": "Nosso check-in oficial é no dia 13/09 a partir das 17h. @piscada"
+  },
+  {
+    "TipoMensagem": 34,
+    "Texto": "O check-in é no dia 13/09 a partir das 17h. @sorriso"
+  },
+  {
+    "TipoMensagem": 34,
+    "Texto": "Verifiquei que o horário do check-in é a partir das 17:00 no dia 13/09. @sorriso"
   }
 ]

@@ -83,6 +83,9 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 if (result.TryFindEntity(Entidade.AgendaAtividadeRefeicao, out entity))
                     AgendaAtividadeRefeicao = entity.ValorCanonico();
+
+                if (result.TryFindEntity(Entidade.AgendaCheckIn, out entity))
+                    AgendaCheckin = entity.ValorCanonico() == "check-in";
             }
             public string Cargo { get; set; }
             public string Pais { get; set; }
@@ -104,6 +107,8 @@ namespace CTX.Bot.ConexaoLiq.Services
             public string AgendaAtividadePeriodo { get; set; }
 
             public string AgendaAtividadeRefeicao { get; set; }
+
+            public bool AgendaCheckin { get; set; }
         }
 
         protected ResumeAfter<IMessageActivity> MessageReceived;
@@ -182,7 +187,7 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, reply))
                 {
-                    reply.Text = $"{ex.Message} Statck:{ex.StackTrace} Inner Exception: {ex?.InnerException.Message}";                    
+                    reply.Text = $"{ex.Message} Statck:{ex.StackTrace} Inner Exception: {ex?.InnerException.Message}";
                     var client = scope.Resolve<IConnectorClient>();
                     await client.Conversations.ReplyToActivityAsync(reply);
                 }

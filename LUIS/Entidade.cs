@@ -24,5 +24,6 @@ namespace CTX.Bot.ConexaoLiq.LUIS
         public const string AgendaAtividadeDia = "agenda.atividade.dia";
         public const string AgendaAtividadePeriodo = "agenda.atividade.periodo";
         public const string AgendaAtividadeRefeicao = "agenda.atividade.refeicao";
+        public const string AgendaCheckIn = "agenda.checkin";
     }
 }

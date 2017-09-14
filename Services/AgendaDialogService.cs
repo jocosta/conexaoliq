@@ -40,6 +40,13 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 await SendTyping();
 
+                if (ValorEntidade.AgendaCheckin)
+                {
+                    await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.Checkin));
+
+                    return;
+                }
+
                 var inicio = string.Empty;
                 var final = string.Empty;
                 var periodo = string.Empty;

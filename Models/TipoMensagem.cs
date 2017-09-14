@@ -34,7 +34,8 @@
         EnviandoAgendaCompleta = 30,
         NaoEncontreiAtividadeDoResponsavel = 31,
         AchoQueOHorarioDeAlmoçoJaPassou = 32,
-        NaoConseguiEncontrarUmaRefeicao = 33
+        NaoConseguiEncontrarUmaRefeicao = 33,
+        Checkin = 34
 
     }
 }
