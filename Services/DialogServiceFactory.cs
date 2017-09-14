@@ -48,6 +48,8 @@ namespace CTX.Bot.ConexaoLiq.Services
                     return new LocalizacaoDialogService(activity, luisResult, textToSpeech);
                 case Intencao.AgradecimentoDespedida:
                     return new DespedidaDialogService(activity, luisResult, textToSpeech);
+                case Intencao.ConexaoAppSenha:
+                    return new SenhaAppDialogService(activity, luisResult, textToSpeech);
                 default:
                     return new NoneDialogService(activity, luisResult, textToSpeech);
             }

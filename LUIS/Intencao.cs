@@ -24,6 +24,8 @@ namespace CTX.Bot.ConexaoLiq.LUIS
         public const string ConexaoLiqLocalizacao = "conexao.liq.localizacao";
         public const string AgradecimentoDespedida = "agradecimento.despedida";
 
+        public const string ConexaoAppSenha = "conexao.app.senha";
+
         public static double GetScoreMatch(string constIntent)
         {
             double score = 0.4;
