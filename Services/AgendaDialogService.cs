@@ -40,6 +40,13 @@ namespace CTX.Bot.ConexaoLiq.Services
 
                 await SendTyping();
 
+                if (ValorEntidade.AgendaCheckin)
+                {
+                    await PostAsync(_mensagemRepository.Pesquisar(TipoMensagem.Checkin));
+
+                    return;
+                }
+
                 var inicio = string.Empty;
                 var final = string.Empty;
                 var periodo = string.Empty;
@@ -89,7 +96,16 @@ namespace CTX.Bot.ConexaoLiq.Services
                 final = final.FormatarHora();
 
                 if (!string.IsNullOrEmpty(dia))
+                {
                     dataAtual = dia.RetornarDataDoDia(dataAtual);
+
+                    if (string.IsNullOrEmpty(inicio))
+                        inicio = "00:00";
+
+                    if (string.IsNullOrEmpty(final))
+                        final = "23:59";
+
+                }
 
                 var atividades = _agendaRepository.PesquisarAtividades(dataAtual, inicio, final);
 

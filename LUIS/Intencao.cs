@@ -22,6 +22,7 @@ namespace CTX.Bot.ConexaoLiq.LUIS
         public const string Help = "help";
         public const string Vestimenta = "conexao.liq.vestimenta";
         public const string ConexaoLiqLocalizacao = "conexao.liq.localizacao";
+        public const string AgradecimentoDespedida = "agradecimento.despedida";
 
         public static double GetScoreMatch(string constIntent)
         {
@@ -62,6 +63,9 @@ namespace CTX.Bot.ConexaoLiq.LUIS
                     score = 0.6;
                     break;
                 case ConexaoLiqLocalizacao:
+                    score = 0.6;
+                    break;
+                case AgradecimentoDespedida:
                     score = 0.6;
                     break;
                 default:

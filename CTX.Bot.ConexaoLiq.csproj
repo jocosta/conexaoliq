@@ -310,6 +310,7 @@
     <Compile Include="Repositories\AgendaRepository.cs" />
     <Compile Include="Repositories\InformacaoBotRepository.cs" />
     <Compile Include="Repositories\NoneRepository.cs" />
+    <Compile Include="Repositories\DespedidaRepository.cs" />
     <Compile Include="Repositories\SaudacaoRepository.cs" />
     <Compile Include="Repositories\EmpresaRepository.cs" />
     <Compile Include="Repositories\CargosRepository.cs" />
@@ -330,6 +331,7 @@
     <Compile Include="Services\HelpDialogService.cs" />
     <Compile Include="Services\LocalizacaoDialogService.cs" />
     <Compile Include="Services\ProactiveService.cs" />
+    <Compile Include="Services\DespedidaDialogService.cs" />
     <Compile Include="Services\UsuarioMalcriadoDialogService.cs" />
     <Compile Include="Services\SaudacaoDialogService.cs" />
     <Compile Include="Services\InstitucionalDialogService.cs" />
@@ -369,6 +371,7 @@
     <Content Include="Resources\agenda.json" />
     <Content Include="Resources\vestimenta.json" />
     <Content Include="Resources\none.json" />
+    <Content Include="Resources\despedidas.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
