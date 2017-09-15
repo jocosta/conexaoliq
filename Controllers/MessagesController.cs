@@ -33,7 +33,7 @@
         private static readonly bool IsSpellCorrectionEnabled = bool.Parse(WebConfigurationManager.AppSettings["IsSpellCorrectionEnabled"]);
         private readonly NLog.ILogger _logger = NLog.LogManager.GetCurrentClassLogger();
 
-        internal static IDialog<PesquisaEventoForm> MakeRootDialog()
+        internal static IDialog<PesquisaEventoForm> MakeRootDialog(string channel, string user)
         {
             return Chain.From(() => FormDialog.FromForm(PesquisaEventoForm.BuildForm));
         }
@@ -50,10 +50,11 @@
                 BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
 
                 var iniciouPesquisa = userData.GetProperty<bool>("IniciouPesquisa");
-
-                await Conversation.SendAsync(activity, MakeRootDialog);
-                var response1 = Request.CreateResponse(HttpStatusCode.OK);
-                return response1;
+               
+                //Decomentar somente em dev para executar pesquisa
+                //await Conversation.SendAsync(activity, () => MakeRootDialog(activity.ChannelId, activity.From.Id));
+                //var response1 = Request.CreateResponse(HttpStatusCode.OK);
+                //return response1;
 
                 try
                 {
@@ -99,7 +100,7 @@
                     userData.SetProperty<bool>("IniciouPesquisa", true);
                     await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
 
-                    await Conversation.SendAsync(activity, MakeRootDialog);
+                    await Conversation.SendAsync(activity, () => MakeRootDialog(activity.ChannelId, activity.From.Id));
                 }
                 else
                 {

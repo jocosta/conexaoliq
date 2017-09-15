@@ -17,6 +17,7 @@ namespace CTX.Bot.ConexaoLiq.Infra.Context
         }
 
         public DbSet<UserActivity> Activities { get; set; }
+        public DbSet<Pesquisa> Pesquisas { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -36,6 +37,7 @@ namespace CTX.Bot.ConexaoLiq.Infra.Context
               .Configure(p => p.HasColumnType("datetime2"));
 
             modelBuilder.Configurations.Add(new UserActivityConfig());
+            modelBuilder.Configurations.Add(new PesquisaConfig());
 
             base.OnModelCreating(modelBuilder);
         }
