@@ -33,9 +33,9 @@
         private static readonly bool IsSpellCorrectionEnabled = bool.Parse(WebConfigurationManager.AppSettings["IsSpellCorrectionEnabled"]);
         private readonly NLog.ILogger _logger = NLog.LogManager.GetCurrentClassLogger();
 
-        internal static IDialog<SandwichOrder> MakeRootDialog()
+        internal static IDialog<PesquisaEventoForm> MakeRootDialog()
         {
-            return Chain.From(() => FormDialog.FromForm(SandwichOrder.BuildForm));
+            return Chain.From(() => FormDialog.FromForm(PesquisaEventoForm.BuildForm));
         }
 
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -45,12 +45,15 @@
 
             //var url = HttpContext.Current.Server.MapPath("~/");
             if (activity.Type == ActivityTypes.Message)
-            {
-
+            {                 
                 StateClient stateClient = activity.GetStateClient();
                 BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
 
                 var iniciouPesquisa = userData.GetProperty<bool>("IniciouPesquisa");
+
+                await Conversation.SendAsync(activity, MakeRootDialog);
+                var response1 = Request.CreateResponse(HttpStatusCode.OK);
+                return response1;
 
                 try
                 {
