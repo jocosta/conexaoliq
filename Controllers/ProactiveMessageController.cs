@@ -35,7 +35,7 @@ namespace CTX.Bot.ConexaoLiq.Controllers
 
                     var reply = item.CreateReply();
                     reply.From = botAccount;
-                    ThumbnailCard thumbnailCard = new ThumbnailCard("Pesquisa de Satisfação", "", $"Gostariamos de saber sua opnião sobre a conexão. Por favor, reserve um tempinho para responder nossa pesquisa de satisfação Ah! Quem já respondeu não precisa fazer novamente 😊😊",
+                    ThumbnailCard thumbnailCard = new ThumbnailCard("Pesquisa de Satisfação", "", $"Gostariamos de saber sua opnião sobre a conexão. Por favor, reserve um tempinho para responder nossa pesquisa de satisfação. Ah! Quem já respondeu não precisa fazer novamente 😊😊",
                         null,
                         new List<CardAction> {
                             new CardAction { Title = "Iniciar Pesquisa", Type = "imBack", Value = "/iniciar-pesquisa-satisfacao" }
